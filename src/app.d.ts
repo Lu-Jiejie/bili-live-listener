@@ -4,10 +4,11 @@ interface User {
   badge?: {
     name: string
     level: number
+    color: string
   }
 }
 
-interface DanmuMsg {
+export interface DanmuMsg {
   user: User
   content: string
 }
