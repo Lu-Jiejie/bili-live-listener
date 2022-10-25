@@ -34,7 +34,7 @@ export const listen = async (roomId: number, handler: MessageHandler) => {
 export { getLongRoomId }
 export type { MessageHandler }
 export type { Message, User } from './type'
-export { GuardLevel } from './type/const'
+export { GuardLevel, InteractType } from './type/const'
 export type {
   PopularityMessage,
   DanmuMessage,
@@ -48,5 +48,8 @@ export type {
   FansCountMessage,
   HotRankChangeMessage,
   LiveStartMessage,
-  LiveEndMessage
+  LiveEndMessage,
+  InteractMessage,
+  EntryEffectMessage,
+  RoomChangeMessage
 } from './parser'
