@@ -82,7 +82,7 @@ const parser = (data: any): GiftMessage => {
   }
 }
 
-export interface Handler {
+export interface GiftHandler {
   onGift: (message: Message<GiftMessage>) => void
 }
 

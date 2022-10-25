@@ -34,7 +34,7 @@ const parser = (data: any): GuardBuyMessage => {
   }
 }
 
-export interface Handler {
+export interface GuardBuyHandler {
   onGuardBuy: (message: Message<GuardBuyMessage>) => void
 }
 

@@ -7,10 +7,10 @@ export interface NoticeMessage {
   name: string
   // 广播内容
   content: string
-  // 广播背景色
-  background: string
-  // 广播高亮色
-  highlight: string
+  // 目标直播间
+  target_id: number
+  // 是否为本直播间
+  is_same_room: boolean
 }
 
 const parser = (data: any, roomId: number): NoticeMessage => {
@@ -20,12 +20,12 @@ const parser = (data: any, roomId: number): NoticeMessage => {
     id: rawData.id,
     name: rawData.name,
     content: rawData.real_roomid === roomId ? rawData.msg_self : rawData.msg_common,
-    background: rawData.full.background,
-    highlight: rawData.full.highlight
+    target_id: rawData.real_roomid,
+    is_same_room: rawData.real_roomid === roomId
   }
 }
 
-export interface Handler {
+export interface NoticeHandler {
   onNotice: (message: Message<NoticeMessage>) => void
 }
 

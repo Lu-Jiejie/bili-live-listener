@@ -13,7 +13,7 @@ const parser = (data: any): RankCountChangeMessage => {
   }
 }
 
-export interface Handler {
+export interface RankCountChangeHandler {
   onRankCountChange: (message: Message<RankCountChangeMessage>) => void
 }
 

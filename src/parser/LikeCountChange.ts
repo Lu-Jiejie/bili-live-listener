@@ -13,7 +13,7 @@ const parser = (data: any): LikeCountChangeMessage => {
   }
 }
 
-export interface Handler {
+export interface LikeCountChangeHandler {
   onLikeCountChange: (message: Message<LikeCountChangeMessage>) => void
 }
 

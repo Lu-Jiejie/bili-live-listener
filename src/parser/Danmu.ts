@@ -59,7 +59,7 @@ const parser = (data: any, roomId: number): DanmuMessage => {
   }
 }
 
-export interface Handler {
+export interface DanmuHandler {
   onDanmu: (message: Message<DanmuMessage>) => void
 }
 

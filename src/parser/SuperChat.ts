@@ -47,7 +47,7 @@ const parser = (data: any, roomId: number): SuperChatMessage => {
   }
 }
 
-export interface Handler {
+export interface SuperChatHandler {
   onSuperChat: (message: Message<SuperChatMessage>) => void
 }
 

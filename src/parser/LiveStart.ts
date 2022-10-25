@@ -8,19 +8,17 @@ export interface LiveStartMessage {
 }
 
 const parser = (data: any): LiveStartMessage => {
-  const rawData = data.data
-
   return {
-    room_id: rawData.roomid,
-    live_platform: rawData.live_platform
+    room_id: data.roomid,
+    live_platform: data.live_platform
   }
 }
 
-export interface Handler {
+export interface LiveStartHandler {
   onLiveStart: (message: Message<LiveStartMessage>) => void
 }
 
-export const LIVE = {
+export const LiveStart = {
   parser,
   eventName: 'LIVE',
   handlerName: 'onLiveStart'
