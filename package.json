@@ -1,6 +1,6 @@
 {
   "name": "bili-live-listener",
-  "version": "0.0.2",
+  "version": "0.0.5",
   "description": "bilibili直播间信息监听包",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -18,7 +18,10 @@
   "files": [
     "dist"
   ],
-  "keywords": [],
+  "keywords": [
+    "bilibili",
+    "live"
+  ],
   "author": "lu-jiejie",
   "license": "ISC",
   "devDependencies": {
