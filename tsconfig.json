@@ -1,15 +1,14 @@
 {
   "compilerOptions": {
-    "module": "ESNext",
-    "target": "ESNext",
-    "lib": [
-      "ESNext",
-      "DOM"
-    ],
+    "target": "es2018",
+    "lib": ["esnext"],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
     "strict": true,
+    "strictNullChecks": true,
     "esModuleInterop": true,
-    "moduleResolution": "Node",
-    "skipLibCheck": true,
-    "isolatedModules": true,
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true
   }
 }
