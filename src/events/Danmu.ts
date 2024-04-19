@@ -4,7 +4,7 @@ import { normalizeMessage } from '../utils/message'
 import type { EventInfo } from '../types/event'
 
 export interface DanmuData {
-  /** 弹幕发送用户 */
+  /** 用户信息 */
   user: User
   /** 弹幕内容 */
   content: string

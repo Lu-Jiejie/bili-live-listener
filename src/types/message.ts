@@ -11,7 +11,7 @@ export interface User {
   /** 用户名 */
   uname: string
   /** 用户头像 */
-  face: string
+  face?: string
   /** 用户当前佩戴的粉丝勋章 */
   fansMedal?: {
     /** 粉丝勋章名称 */
@@ -42,11 +42,11 @@ export interface User {
     }
   }
   /** 高能榜排名 */
-  giftRank: GiftRank
+  giftRank?: GiftRank
   /** 大航海类型 */
-  guardType: GuardType
+  guardType?: GuardType
   // 是否为房管
-  isRoomAdmin: boolean
+  isRoomAdmin?: boolean
 }
 
 export enum GiftRank {

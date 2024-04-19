@@ -10,7 +10,8 @@ export default await antfu(
       // 允许使用箭头函数作为最顶层函数定义
       'antfu/top-level-function': 'off',
       // JSON格式不需排序
-      'jsonc/sort-keys': 'off'
+      'jsonc/sort-keys': 'off',
+      'dot-notation': 'off'
     }
   }
 )

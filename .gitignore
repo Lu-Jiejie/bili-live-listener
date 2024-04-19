@@ -10,5 +10,4 @@ logs
 node_modules
 temp
 src/start.ts
-output.txt
-mocks
+reference
