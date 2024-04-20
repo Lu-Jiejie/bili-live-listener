@@ -21,9 +21,8 @@ export interface DanmuData {
 
 function dataProcessor(rawData: any): Message<DanmuData> {
   const { info } = rawData
-  const fansMedalInactive = colorHex2Int('#c0c0c0')
 
-  const data: DanmuData = {
+  const newData: DanmuData = {
     user: {
       uid: info[0][15].user.uid,
       uname: info[0][15].user.base.name,
@@ -31,41 +30,37 @@ function dataProcessor(rawData: any): Message<DanmuData> {
       giftRank: info[4][4],
       guardType: info[7],
       isRoomAdmin: info[2][2] === 1,
-      ...(info[3].length > 0
+      fansMedal: info[3].length > 0
         ? {
-            fansMedal: {
-              name: info[3][1],
-              level: info[3][0],
-              color: {
-                original: int2ColorHex(info[3][4]),
-                border: int2ColorHex(info[3][7]),
-                start: int2ColorHex(info[3][8]),
-                end: int2ColorHex(info[3][9])
-              },
-              isActive: info[3][7] !== fansMedalInactive,
-              anchor: {
-                uid: info[3][12],
-                uname: info[3][2],
-                roomId: info[3][3]
-              }
+            name: info[3][1],
+            level: info[3][0],
+            color: {
+              original: int2ColorHex(info[3][4]),
+              border: int2ColorHex(info[3][7]),
+              start: int2ColorHex(info[3][8]),
+              end: int2ColorHex(info[3][9])
+            },
+            isActive: int2ColorHex(info[3][7]) !== '#c0c0c0',
+            anchor: {
+              uid: info[3][12],
+              uname: info[3][2],
+              roomId: info[3][3]
             }
           }
-        : {})
+        : undefined
     },
     content: info[1],
     timestamp: info[0][4],
     isLottery: info[0][9] !== 0,
-    ...(info[0][13]?.emoticon_unique
+    emoticon: info[0][13]?.emoticon_unique
       ? {
-          emoticon: {
-            id: info[0][13].emoticon_unique.id,
-            url: info[0][13].url
-          }
+          id: info[0][13].emoticon_unique.id,
+          url: info[0][13].url
         }
-      : {})
+      : undefined
   }
 
-  return normalizeMessage(rawData.cmd, data, rawData)
+  return normalizeMessage(rawData.cmd, newData, rawData)
 }
 
 export const DanmuEvent: EventInfo<DanmuData> = {

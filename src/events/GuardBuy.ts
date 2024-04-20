@@ -22,21 +22,21 @@ export interface GuardBuyData {
 }
 
 function dataProcessor(rawData: any): Message<GuardBuyData> {
-  const { data: info } = rawData
-  const data: GuardBuyData = {
+  const { data } = rawData
+  const newData: GuardBuyData = {
     user: {
-      uid: info.uid,
-      uname: info.username
+      uid: data.uid,
+      uname: data.username
     },
-    guardType: info.guard_level,
-    price: info.price,
-    num: info.num,
-    giftName: info.gift_name,
-    giftId: info.gift_id,
-    startTime: info.start_time,
-    endTime: info.end_time
+    guardType: data.guard_level,
+    price: data.price,
+    num: data.num,
+    giftName: data.gift_name,
+    giftId: data.gift_id,
+    startTime: data.start_time,
+    endTime: data.end_time
   }
-  return normalizeMessage(rawData.cmd, data, rawData)
+  return normalizeMessage(rawData.cmd, newData, rawData)
 }
 
 export const GuardBuyEvent: EventInfo<GuardBuyData> = {

@@ -1,3 +1,4 @@
+import type { EventInfo } from '../types/event'
 import type { Message } from '../types/message'
 import { normalizeMessage } from '../utils/message'
 
@@ -12,7 +13,7 @@ function dataProcessor(rawData: any): Message<TAMPLATEData> {
   return normalizeMessage(rawData.cmd, data, rawData)
 }
 
-export const TAMPLATEEvent = {
+export const TAMPLATEEvent: EventInfo<TAMPLATEData> = {
   cmdName: 'TAMPLATE',
   handlerName: 'onTAMPLATE',
   dataProcessor

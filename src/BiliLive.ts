@@ -8,6 +8,7 @@ import { CloseEvent, ErrorEvent, HeartbeatEvent, LiveEvent, OpenEvent } from './
 // events
 import { type DanmuData, DanmuEvent } from './events/Danmu'
 import { type GuardBuyData, GuardBuyEvent } from './events/GuardBuy'
+import { type SuperChatData, SuperChatEvent } from './events/SuperChat'
 
 const commonEvents = [
   OpenEvent,
@@ -19,7 +20,8 @@ const commonEvents = [
 
 const events = [
   DanmuEvent,
-  GuardBuyEvent
+  GuardBuyEvent,
+  SuperChatEvent
 ]
 
 interface BiliLiveOptions {
@@ -44,6 +46,7 @@ export default class BiliLive {
   // event handler
   public onDanmu!: (callback: (message: Message<DanmuData>) => void) => RemoveHandler
   public onGuardBuy!: (callback: (message: Message<GuardBuyData>) => void) => RemoveHandler
+  public onSuperChat!: (callback: (message: Message<SuperChatData>) => void) => RemoveHandler
 
   constructor(roomId: number, options: BiliLiveOptions) {
     this.live = new KeepLiveTCP(roomId, options)
