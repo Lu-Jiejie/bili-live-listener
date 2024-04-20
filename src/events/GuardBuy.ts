@@ -1,3 +1,4 @@
+import type { EventInfo } from '../types/event'
 import type { GuardType, Message, User } from '../types/message'
 import { normalizeMessage } from '../utils/message'
 
@@ -38,7 +39,7 @@ function dataProcessor(rawData: any): Message<GuardBuyData> {
   return normalizeMessage(rawData.cmd, data, rawData)
 }
 
-export const GuardBuyEvent = {
+export const GuardBuyEvent: EventInfo<GuardBuyData> = {
   cmdName: 'GUARD_BUY',
   handlerName: 'onGuardBuy',
   dataProcessor

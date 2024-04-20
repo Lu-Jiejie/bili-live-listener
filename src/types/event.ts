@@ -5,3 +5,9 @@ export interface EventInfo<T> {
   handlerName: string
   dataProcessor: (data: any) => Message<T>
 }
+
+export interface CommonEventInfo {
+  cmdName: string
+  handlerName: string
+  dataProcessor: (data: any) => any
+}
