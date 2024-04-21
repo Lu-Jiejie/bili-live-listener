@@ -36,28 +36,26 @@ function dataProcessor(rawData: any): Message<SuperChatData> {
       uname: user_info.uname,
       face: user_info.face,
       faceFrame: user_info.face_frame,
-      ...(medal_info
+      fansMedal: medal_info
         ? {
-            fansMedal: {
-              name: medal_info.medal_name,
-              level: medal_info.medal_level,
-              color: {
-                original: medal_info.medal_color,
-                border: int2ColorHex(medal_info.medal_color_border),
-                start: int2ColorHex(medal_info.medal_color_start),
-                end: int2ColorHex(medal_info.medal_color_end)
-              },
-              isActive: int2ColorHex(medal_info.medal_color_start) !== '#c0c0c0',
-              anchor: {
-                uid: medal_info.target_id,
-                uname: medal_info.anchor_uname,
-                roomId: medal_info.anchor_roomid
-              }
+            name: medal_info.medal_name,
+            level: medal_info.medal_level,
+            color: {
+              original: medal_info.medal_color,
+              border: int2ColorHex(medal_info.medal_color_border),
+              start: int2ColorHex(medal_info.medal_color_start),
+              end: int2ColorHex(medal_info.medal_color_end)
             },
-            guardType: medal_info.guard_level
+            isActive: int2ColorHex(medal_info.medal_color_start) !== '#c0c0c0',
+            anchor: {
+              uid: medal_info.target_id,
+              uname: medal_info.anchor_uname,
+              roomId: medal_info.anchor_roomid
+            }
           }
-        : {})
-
+        : undefined,
+      guardType: user_info.guard_level,
+      isRoomAdmin: !!user_info.manager
     },
     content: data.message,
     price: data.price,

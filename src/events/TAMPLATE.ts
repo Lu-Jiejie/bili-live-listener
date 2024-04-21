@@ -7,10 +7,10 @@ export interface TAMPLATEData {
 }
 
 function dataProcessor(rawData: any): Message<TAMPLATEData> {
-  const data: TAMPLATEData = {
+  const newData: TAMPLATEData = {
 
   }
-  return normalizeMessage(rawData.cmd, data, rawData)
+  return normalizeMessage(rawData.cmd, newData, rawData)
 }
 
 export const TAMPLATEEvent: EventInfo<TAMPLATEData> = {
