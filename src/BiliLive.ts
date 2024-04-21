@@ -14,6 +14,9 @@ import { type WatchedChangeData, WatchedChangeEvent } from './events/WatchedChan
 import { type RankCountUpdateData, RankCountUpdateEvent } from './events/RankCountUpdate'
 import { type LikeCountUpdateData, LikeCountUpdateEvent } from './events/LikeCountUpdate'
 import { type NoticeData, NoticeEvent } from './events/Notice'
+import { type HotRankUpdateData, HotRankUpdateEvent } from './events/HotRankUpdate'
+import { type FansCountUpdateData, FansCountUpdateEvent } from './events/FansCountUpdate'
+import { type LiveStartData, LiveStartEvent } from './events/LiveStart'
 
 const commonEvents = [
   OpenEvent,
@@ -31,7 +34,10 @@ const events = [
   WatchedChangeEvent,
   RankCountUpdateEvent,
   LikeCountUpdateEvent,
-  NoticeEvent
+  NoticeEvent,
+  HotRankUpdateEvent,
+  FansCountUpdateEvent,
+  LiveStartEvent
 ]
 
 interface BiliLiveOptions {
@@ -48,7 +54,7 @@ export default class BiliLive {
 
   // common events handler
   public onOpen!: (callback: () => void) => RemoveHandler
-  public onLive!: (callback: () => void) => RemoveHandler
+  public onRoomEnter!: (callback: () => void) => RemoveHandler
   public onHeartbeat!: (callback: () => void) => RemoveHandler
   public onClose!: (callback: () => void) => RemoveHandler
   public onError!: (callback: (error: any) => void) => RemoveHandler
@@ -62,6 +68,9 @@ export default class BiliLive {
   public onRankCountChange!: (callback: (message: Message<RankCountUpdateData>) => void) => RemoveHandler
   public onLikeCountChange!: (callback: (message: Message<LikeCountUpdateData>) => void) => RemoveHandler
   public onNotice!: (callback: (message: Message<NoticeData>) => void) => RemoveHandler
+  public onHotRankUpdate!: (callback: (message: Message<HotRankUpdateData>) => void) => RemoveHandler
+  public onFansCountUpdate!: (callback: (message: Message<FansCountUpdateData>) => void) => RemoveHandler
+  public onLiveStart!: (callback: (message: Message<LiveStartData>) => void) => RemoveHandler
 
   constructor(roomId: number, options: BiliLiveOptions) {
     this.live = new KeepLiveTCP(roomId, options)
