@@ -12,6 +12,8 @@ import { type SuperChatData, SuperChatEvent } from './events/SuperChat'
 import { type GiftData, GiftEvent } from './events/Gift'
 import { type WatchedChangeData, WatchedChangeEvent } from './events/WatchedChange'
 import { type RankCountChangeData, RankCountChangeEvent } from './events/RankCountChange'
+import { type LikeCountChangeData, LikeCountChangeEvent } from './events/LikeCountChange'
+import { type NoticeData, NoticeEvent } from './events/Notice'
 
 const commonEvents = [
   OpenEvent,
@@ -27,7 +29,9 @@ const events = [
   SuperChatEvent,
   GiftEvent,
   WatchedChangeEvent,
-  RankCountChangeEvent
+  RankCountChangeEvent,
+  LikeCountChangeEvent,
+  NoticeEvent
 ]
 
 interface BiliLiveOptions {
@@ -56,6 +60,8 @@ export default class BiliLive {
   public onGift!: (callback: (message: Message<GiftData>) => void) => RemoveHandler
   public onWatchedChange!: (callback: (message: Message<WatchedChangeData>) => void) => RemoveHandler
   public onRankCountChange!: (callback: (message: Message<RankCountChangeData>) => void) => RemoveHandler
+  public onLikeCountChange!: (callback: (message: Message<LikeCountChangeData>) => void) => RemoveHandler
+  public onNotice!: (callback: (message: Message<NoticeData>) => void) => RemoveHandler
 
   constructor(roomId: number, options: BiliLiveOptions) {
     this.live = new KeepLiveTCP(roomId, options)
