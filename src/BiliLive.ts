@@ -17,6 +17,7 @@ import { type NoticeData, NoticeEvent } from './events/Notice'
 import { type HotRankUpdateData, HotRankUpdateEvent } from './events/HotRankUpdate'
 import { type FansCountUpdateData, FansCountUpdateEvent } from './events/FansCountUpdate'
 import { type LiveStartData, LiveStartEvent } from './events/LiveStart'
+import { type LiveEndData, LiveEndEvent } from './events/LiveEnd'
 
 const commonEvents = [
   OpenEvent,
@@ -37,7 +38,8 @@ const events = [
   NoticeEvent,
   HotRankUpdateEvent,
   FansCountUpdateEvent,
-  LiveStartEvent
+  LiveStartEvent,
+  LiveEndEvent
 ]
 
 interface BiliLiveOptions {
@@ -71,6 +73,7 @@ export default class BiliLive {
   public onHotRankUpdate!: (callback: (message: Message<HotRankUpdateData>) => void) => RemoveHandler
   public onFansCountUpdate!: (callback: (message: Message<FansCountUpdateData>) => void) => RemoveHandler
   public onLiveStart!: (callback: (message: Message<LiveStartData>) => void) => RemoveHandler
+  public onLiveEnd!: (callback: (message: Message<LiveEndData>) => void) => RemoveHandler
 
   constructor(roomId: number, options: BiliLiveOptions) {
     this.live = new KeepLiveTCP(roomId, options)
