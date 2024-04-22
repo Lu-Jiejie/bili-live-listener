@@ -40,6 +40,7 @@ function dataProcessor(rawData: any): Message<SuperChatData> {
         ? {
             name: medal_info.medal_name,
             level: medal_info.medal_level,
+            guardType: medal_info.guard_level,
             color: {
               original: medal_info.medal_color,
               border: int2ColorHex(medal_info.medal_color_border),

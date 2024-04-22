@@ -27,13 +27,11 @@ function dataProcessor(rawData: any): Message<DanmuData> {
       uid: info[0][15].user.uid,
       uname: info[0][15].user.base.name,
       face: info[0][15].user.base.face,
-      giftRank: info[4][4],
-      guardType: info[7],
-      isRoomAdmin: info[2][2] === 1,
       fansMedal: info[3].length > 0
         ? {
             name: info[3][1],
             level: info[3][0],
+            guardType: info[3][10],
             color: {
               original: int2ColorHex(info[3][4]),
               border: int2ColorHex(info[3][7]),
@@ -47,7 +45,10 @@ function dataProcessor(rawData: any): Message<DanmuData> {
               roomId: info[3][3]
             }
           }
-        : undefined
+        : undefined,
+      giftRank: info[4][4],
+      guardType: info[7],
+      isRoomAdmin: info[2][2] === 1
     },
     content: info[1],
     timestamp: info[0][4],

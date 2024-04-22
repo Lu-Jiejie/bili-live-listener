@@ -29,6 +29,8 @@ export interface FansMedal {
   name: string
   /** 粉丝勋章等级 */
   level: number
+  /** 粉丝勋章的大航海类型 */
+  guardType: GuardType
   /** 粉丝勋章颜色 */
   color: {
     /** 原始颜色 */

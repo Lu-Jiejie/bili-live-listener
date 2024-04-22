@@ -29,6 +29,7 @@ function dataProcessorInteract(rawData: any): Message<InteractData> {
         ? {
             name: fans_medal.medal_name,
             level: fans_medal.medal_level,
+            guardType: fans_medal.is_lighted,
             color: {
               original: fans_medal.medal_color,
               border: fans_medal.medal_color_border,
@@ -62,6 +63,7 @@ function dataProcessorLike(rawData: any): Message<InteractData> {
         ? {
             name: fans_medal.medal_name,
             level: fans_medal.medal_level,
+            guardType: fans_medal.is_lighted,
             color: {
               original: fans_medal.medal_color,
               border: fans_medal.medal_color_border,
