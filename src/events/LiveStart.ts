@@ -7,12 +7,15 @@ export interface LiveStartData {
   platform: string
   /** 开播时间 */
   startTime: number
+  /** 房间Id */
+  roomId: number
 }
 
 function dataProcessor(rawData: any): Message<LiveStartData> {
   const newData: LiveStartData = {
     platform: rawData.live_platform,
-    startTime: rawData.live_time
+    startTime: rawData.live_time,
+    roomId: rawData.roomid
   }
   return normalizeMessage(rawData.cmd, newData, rawData)
 }
