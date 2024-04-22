@@ -1,5 +1,5 @@
 import type { Message, User } from '../types/message'
-import { colorHex2Int, int2ColorHex } from '../utils/color'
+import { int2ColorHex } from '../utils/color'
 import { normalizeMessage } from '../utils/message'
 import type { EventInfo } from '../types/event'
 
@@ -40,7 +40,7 @@ function dataProcessor(rawData: any): Message<DanmuData> {
               start: int2ColorHex(info[3][8]),
               end: int2ColorHex(info[3][9])
             },
-            isActive: int2ColorHex(info[3][7]) !== '#c0c0c0',
+            isLighted: info[3][11],
             anchor: {
               uid: info[3][12],
               uname: info[3][2],

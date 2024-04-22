@@ -41,7 +41,7 @@ export interface FansMedal {
     end: string
   }
   /** 粉丝勋章是否点亮 */
-  isActive: boolean
+  isLighted: boolean
   /** 相关主播信息 */
   anchor: {
     /** 主播用户Id */

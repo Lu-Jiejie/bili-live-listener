@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { colorHex2Rgb, int2ColorHex, rgb2Int } from '../src/utils/color'
+import { colorHex2Rgb, int2ColorHex } from '../src/utils/color'
 
 describe('test', () => {
   it('int2Hex should work', () => {
@@ -15,7 +15,7 @@ describe('test', () => {
       ]
     `)
   })
-  it.only('colorHex2Int should work', () => {
+  it('colorHex2Int should work', () => {
     expect(int2ColorHex(2951253)).toMatchInlineSnapshot('"#2d0855"')
   })
 })

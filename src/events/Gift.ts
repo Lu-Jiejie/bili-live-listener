@@ -1,6 +1,5 @@
 import type { EventInfo } from '../types/event'
 import type { Message, User } from '../types/message'
-import { int2ColorHex } from '../utils/color'
 import { normalizeMessage } from '../utils/message'
 
 export interface GiftData {
@@ -47,7 +46,7 @@ function dataProcessor(rawData: any): Message<GiftData> {
               start: medal_info.medal_color_start,
               end: medal_info.medal_color_end
             },
-            isActive: int2ColorHex(medal_info.medal_color) !== '#c0c0c0',
+            isLighted: medal_info.is_lighted,
             anchor: {
               uid: medal_info.target_id,
               uname: medal_info.anchor_uname,

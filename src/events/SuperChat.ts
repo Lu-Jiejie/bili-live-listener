@@ -46,7 +46,7 @@ function dataProcessor(rawData: any): Message<SuperChatData> {
               start: int2ColorHex(medal_info.medal_color_start),
               end: int2ColorHex(medal_info.medal_color_end)
             },
-            isActive: int2ColorHex(medal_info.medal_color_start) !== '#c0c0c0',
+            isLighted: medal_info.is_lighted,
             anchor: {
               uid: medal_info.target_id,
               uname: medal_info.anchor_uname,

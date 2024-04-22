@@ -18,6 +18,7 @@ import { type HotRankUpdateData, HotRankUpdateEvent } from './events/HotRankUpda
 import { type FansCountUpdateData, FansCountUpdateEvent } from './events/FansCountUpdate'
 import { type LiveStartData, LiveStartEvent } from './events/LiveStart'
 import { type LiveEndData, LiveEndEvent } from './events/LiveEnd'
+import { type InteractData, InteractEvent } from './events/Interact'
 
 const commonEvents = [
   OpenEvent,
@@ -39,7 +40,8 @@ const events = [
   HotRankUpdateEvent,
   FansCountUpdateEvent,
   LiveStartEvent,
-  LiveEndEvent
+  LiveEndEvent,
+  InteractEvent
 ]
 
 interface BiliLiveOptions {
@@ -74,6 +76,7 @@ export default class BiliLive {
   public onFansCountUpdate!: (callback: (message: Message<FansCountUpdateData>) => void) => RemoveHandler
   public onLiveStart!: (callback: (message: Message<LiveStartData>) => void) => RemoveHandler
   public onLiveEnd!: (callback: (message: Message<LiveEndData>) => void) => RemoveHandler
+  public onInteract!: (callback: (message: Message<InteractData>) => void) => RemoveHandler
 
   constructor(roomId: number, options: BiliLiveOptions) {
     this.live = new KeepLiveTCP(roomId, options)
@@ -82,10 +85,13 @@ export default class BiliLive {
 
   private initEvents() {
     [...commonEvents, ...events].forEach((event) => {
-      const { cmdName, handlerName, dataProcessor } = event
-      this.live.on(cmdName, (data) => {
-        if (this.handlers[handlerName])
-          this.handlers[handlerName].forEach(({ callback }) => callback(dataProcessor(data)))
+      const { cmdName: _cmdName, handlerName, dataProcessor } = event
+      const cmdNames = Array.isArray(_cmdName) ? _cmdName : [_cmdName]
+      cmdNames.forEach((cmdName) => {
+        this.live.on(cmdName, (data) => {
+          if (this.handlers[handlerName])
+            this.handlers[handlerName].forEach(({ callback }) => callback(dataProcessor(data)))
+        })
       })
       ;(this as any)[handlerName] = function (callback: Function): RemoveHandler {
         return this.addHandler(handlerName, callback)

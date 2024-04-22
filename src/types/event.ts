@@ -1,7 +1,7 @@
 import type { Message } from './message'
 
 export interface EventInfo<T> {
-  cmdName: string
+  cmdName: string | string[]
   handlerName: string
   dataProcessor: (data: any) => Message<T>
 }
