@@ -58,7 +58,7 @@ export default class BiliLive {
 
   // common events handler
   public onOpen!: (callback: () => void) => RemoveHandler
-  public onRoomEnter!: (callback: () => void) => RemoveHandler
+  public onLive!: (callback: () => void) => RemoveHandler
   public onHeartbeat!: (callback: () => void) => RemoveHandler
   public onClose!: (callback: () => void) => RemoveHandler
   public onError!: (callback: (error: any) => void) => RemoveHandler
