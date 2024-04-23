@@ -24,7 +24,7 @@ export async function getRoomConf(roomid: number, cookie: string) {
   return { key }
 }
 
-export async function getLoginUid(cookie: string) {
+export async function getLoginedUid(cookie: string) {
   const {
     data: {
       mid: uid

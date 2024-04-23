@@ -1,17 +1,17 @@
 {
-  "name": "pkg-name",
+  "name": "bili-live-listener",
   "type": "module",
   "version": "0.0.5",
-  "packageManager": "pnpm@9.0.2",
-  "description": "bilibili直播间信息监听包",
+  "packageManager": "pnpm@9.0.5",
+  "description": "Bilibili直播间WebSocket消息监听库",
   "author": "LU-JIEJIE",
   "license": "MIT",
-  "homepage": "https://github.com/LU-JIEJIE/pkg-name#readme",
+  "homepage": "https://github.com/LU-JIEJIE/bili-live-listener#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LU-JIEJIE/pkg-name.git"
+    "url": "git+https://github.com/LU-JIEJIE/bili-live-listener.git"
   },
-  "bugs": "https://github.com/LU-JIEJIE/pkg-name/issues",
+  "bugs": "https://github.com/LU-JIEJIE/bili-live-listener/issues",
   "keywords": [
     "bilibili",
     "live",

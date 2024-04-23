@@ -56,7 +56,7 @@ interface BiliLiveOptions {
 type RemoveHandler = () => void
 
 export default class BiliLive {
-  public live: KeepLiveTCP
+  private live: KeepLiveTCP
   private handlers: Record<string, { id: number, callback: Function }[]> = {}
   private handlerIdCounter = 0
 
