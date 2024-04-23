@@ -138,6 +138,8 @@ const uid = getLoginedUid(cookie)
 | onEntryEffect   | [EntryEffectData](src/events/EntryEffect.ts) | 有入场特效的用户进入直播间（舰长、提督、总督等）                     |
 | onRoomChange  | [RoomChangeData](src/events/RoomChange.ts) | 房间信息变动（标题、分区）                     |
 
+值得注意的是，这些 `Message Methods` 都会返回一个移除监听器的函数，你可以调用这个函数来移除监听器，参考 [这里](#example)
+
 ### Message Type
 
 #### Common
@@ -260,3 +262,9 @@ export interface DanmuData {
   }
 }
 ```
+
+## Reference
+
+[SocialSisterYi/bilibili-API-collect](https://github.com/SocialSisterYi/bilibili-API-collect/blob/master/docs/live/message_stream.md)
+
+[lovelyyoshino/Bilibili-Live-API](https://github.com/lovelyyoshino/Bilibili-Live-API/blob/master/API.WebSocket.md)
