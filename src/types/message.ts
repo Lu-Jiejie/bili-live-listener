@@ -90,3 +90,37 @@ export enum InteractType {
   Share,
   Like
 }
+
+/** 天选时刻奖品信息 */
+export interface AnchorLotAward {
+  /** 奖品名称 */
+  name: string
+  /** 奖品数量 */
+  num: number
+  /** 奖品图片 */
+  image: string
+  /** 奖品类型 */
+  type: AnchorLotAwardType
+  /** 奖品价值描述 */
+  priceText: string
+}
+
+/** 天选时刻奖品类型 */
+export enum AnchorLotAwardType {
+  /** 实物奖品 */
+  PHYSICAL = 0,
+  /** 虚拟奖品 */
+  VIRTUAL = 1
+}
+
+/** 天选时刻参与用户要求的类型 */
+export enum AnchorLotUserType {
+  /** 无要求 */
+  None = 0,
+  /** 关注主播 */
+  Follow = 1,
+  /** 粉丝勋章 */
+  FansMedal = 2,
+  /** 大航海 */
+  Guard = 3
+}
