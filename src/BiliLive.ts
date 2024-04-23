@@ -20,6 +20,7 @@ import { type LiveStartData, LiveStartEvent } from './events/LiveStart'
 import { type LiveEndData, LiveEndEvent } from './events/LiveEnd'
 import { type InteractData, InteractEvent } from './events/Interact'
 import { type EntryEffectData, EntryEffectEvent } from './events/EntryEffect'
+import { type RoomChangeData, RoomChangeEvent } from './events/RoomChange'
 
 const commonEvents = [
   OpenEvent,
@@ -43,7 +44,8 @@ const events = [
   LiveStartEvent,
   LiveEndEvent,
   InteractEvent,
-  EntryEffectEvent
+  EntryEffectEvent,
+  RoomChangeEvent
 ]
 
 interface BiliLiveOptions {
@@ -80,6 +82,7 @@ export default class BiliLive {
   public onLiveEnd!: (callback: (message: Message<LiveEndData>) => void) => RemoveHandler
   public onInteract!: (callback: (message: Message<InteractData>) => void) => RemoveHandler
   public onEntryEffect!: (callback: (message: Message<EntryEffectData>) => void) => RemoveHandler
+  public onRoomChange!: (callback: (message: Message<RoomChangeData>) => void) => RemoveHandler
 
   constructor(roomId: number, options: BiliLiveOptions) {
     this.live = new KeepLiveTCP(roomId, options)
