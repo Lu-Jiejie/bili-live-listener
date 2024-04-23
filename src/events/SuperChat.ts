@@ -36,7 +36,7 @@ function dataProcessor(rawData: any): Message<SuperChatData> {
       uname: user_info.uname,
       face: user_info.face,
       faceFrame: user_info.face_frame,
-      fansMedal: medal_info
+      fansMedal: medal_info && medal_info.medal_name
         ? {
             name: medal_info.medal_name,
             level: medal_info.medal_level,

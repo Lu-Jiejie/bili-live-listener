@@ -36,7 +36,7 @@ function dataProcessor(rawData: any): Message<GiftData> {
       uid: data.uid,
       uname: data.uname,
       face: data.face,
-      fansMedal: medal_info.medal_name
+      fansMedal: medal_info && medal_info.medal_name
         ? {
             name: medal_info.medal_name,
             level: medal_info.medal_level,
