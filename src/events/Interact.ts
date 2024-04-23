@@ -1,13 +1,7 @@
 import type { EventInfo } from '../types/event'
+import { InteractType } from '../types/message'
 import type { Message, User } from '../types/message'
 import { normalizeMessage } from '../utils/message'
-
-enum InteractType {
-  Enter = 1,
-  Follow,
-  Share,
-  Like
-}
 
 export interface InteractData {
   /** 互动类型 */

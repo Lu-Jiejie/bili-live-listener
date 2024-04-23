@@ -1,7 +1,11 @@
 export interface Message<T> {
+  /** 消息原生类型 */
   cmd: string
+  /** 收到消息的时间戳 */
   timestamp: number
+  /** 类型化后的消息主体 */
   data: T
+  /** 原生消息 */
   raw: any
 }
 
@@ -55,6 +59,7 @@ export interface FansMedal {
   }
 }
 
+/** 高能榜排名 */
 export enum GiftRank {
   /** 未上榜 */
   None,
@@ -66,6 +71,7 @@ export enum GiftRank {
   Third
 }
 
+/** 大航海类型 */
 export enum GuardType {
   /** 未上舰 */
   None,
@@ -75,4 +81,12 @@ export enum GuardType {
   TiDu,
   /** 舰长 */
   JianZhang
+}
+
+/** 互动类型 */
+export enum InteractType {
+  Enter = 1,
+  Follow,
+  Share,
+  Like
 }
