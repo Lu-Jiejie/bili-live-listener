@@ -121,4 +121,9 @@ export default class BiliLive {
   public close() {
     this.live.close()
   }
+
+  public onRawMessage: typeof this.live.on = (...args) => {
+    this.live.on(...args)
+    return this.live
+  }
 }
