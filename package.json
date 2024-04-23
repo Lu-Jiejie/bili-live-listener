@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.0.5",
   "packageManager": "pnpm@9.0.5",
-  "description": "Bilibili直播间WebSocket消息监听库",
+  "description": "Bilibili直播间消息监听库。",
   "author": "LU-JIEJIE",
   "license": "MIT",
   "homepage": "https://github.com/LU-JIEJIE/bili-live-listener#readme",
