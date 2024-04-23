@@ -1,6 +1,6 @@
 # bili-live-listener
 
-![NPM Version](https://img.shields.io/npm/v/bili-live-listener?style=flat&color=skyblue) [![Bilibili](https://img.shields.io/badge/-Bilibili直播-skyblue?style=flat&logo=Bilibili&logoColor=444)](https://live.bilibili.com/)
+[![NPM Version](https://img.shields.io/npm/v/bili-live-listener?style=flat&color=skyblue)](https://www.npmjs.com/package/bili-live-listener) [![Bilibili](https://img.shields.io/badge/-Bilibili直播-skyblue?style=flat&logo=Bilibili&logoColor=444)](https://live.bilibili.com/)
 
 Bilibili直播间消息监听库。
 
