@@ -118,6 +118,22 @@ const uid = getLoginedUid(cookie)
 | onClose         | void           | 连接关闭                     |
 | onError         | error: any | 连接 error，同时连接也会关闭 |
 
+### Listen to Raw Message
+
+你可以使用 `onRawMessage` 方法监听原生消息，以应对B站新增的消息类型。一个例子如下：
+
+```typescript
+// 监听一切消息
+biliLive.onRawMessage('msg',(message) => {
+  console.log(message)
+})
+
+// 监听指定消息
+biliLive.onRawMessage('DANMU_MSG',(message) => {
+  console.log(message)
+})
+  ```
+
 ### Message Methods
 
 | Instance Method | Callback Params        | Trigger When ...             |
@@ -137,6 +153,8 @@ const uid = getLoginedUid(cookie)
 | onInteract    | [InteractData](src/events/Interact.ts) | 互动消息（用户进入、关注、分享、点赞直播间）                     |
 | onEntryEffect   | [EntryEffectData](src/events/EntryEffect.ts) | 有入场特效的用户进入直播间（舰长、提督、总督等）                     |
 | onRoomChange  | [RoomChangeData](src/events/RoomChange.ts) | 房间信息变动（标题、分区）                     |
+| onAnchorLotStart | [AnchorLotStartData](src/events/AnchorLotStart.ts) | 天选时刻开始                     |
+| onAnchorLotEnd | [AnchorLotEndData](src/events/AnchorLotEnd.ts) | 天选时刻结束                     |
 
 值得注意的是，这些 `Message Methods` 都会返回一个移除监听器的函数，你可以调用这个函数来移除监听器，参考 [这里](#example)
 
@@ -145,6 +163,7 @@ const uid = getLoginedUid(cookie)
 #### Common
 
 ```typescript
+// 回调函数中的参数类型
 export interface Message<T> {
   /** 消息原生类型 */
   cmd: string
@@ -156,6 +175,7 @@ export interface Message<T> {
   raw: any
 }
 
+// 用户信息
 export interface User {
   /** 用户Id */
   uid: number
@@ -175,6 +195,7 @@ export interface User {
   isRoomAdmin?: boolean
 }
 
+// 粉丝勋章信息
 export interface FansMedal {
   /** 粉丝勋章名称 */
   name: string
@@ -236,6 +257,40 @@ export enum InteractType {
   Follow,
   Share,
   Like
+}
+
+/** 天选时刻奖品信息 */
+export interface AnchorLotAward {
+  /** 奖品名称 */
+  name: string
+  /** 奖品数量 */
+  num: number
+  /** 奖品图片 */
+  image: string
+  /** 奖品类型 */
+  type: AnchorLotAwardType
+  /** 奖品价值描述 */
+  priceText: string
+}
+
+/** 天选时刻奖品类型 */
+export enum AnchorLotAwardType {
+  /** 实物奖品 */
+  PHYSICAL = 0,
+  /** 虚拟奖品 */
+  VIRTUAL = 1
+}
+
+/** 天选时刻参与用户要求的类型 */
+export enum AnchorLotUserType {
+  /** 无要求 */
+  None = 0,
+  /** 关注主播 */
+  Follow = 1,
+  /** 粉丝勋章 */
+  FansMedal = 2,
+  /** 大航海 */
+  Guard = 3
 }
 ```
 
