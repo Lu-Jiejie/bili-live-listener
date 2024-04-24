@@ -1,0 +1,61 @@
+{
+  "cmd": "ENTRY_EFFECT",
+  "data": {
+    "id": 4,
+    "uid": 3108739,
+    "target_id": 8739477,
+    "mock_effect": 0,
+    "face": "https://i1.hdslb.com/bfs/face/5275dcfb158087ed02232de9e952a8b87317a70c.jpg",
+    "privilege_type": 3,
+    "copy_writing": "欢迎舰长 <%大井盖儿%> 进入直播间",
+    "copy_color": "#ffffff",
+    "highlight_color": "#E6FF00",
+    "priority": 1,
+    "basemap_url": "https://i0.hdslb.com/bfs/live/mlive/11a6e8eb061c3e715d0a6a2ac0ddea2faa15c15e.png",
+    "show_avatar": 1,
+    "effective_time": 2,
+    "web_basemap_url": "https://i0.hdslb.com/bfs/live/mlive/11a6e8eb061c3e715d0a6a2ac0ddea2faa15c15e.png",
+    "web_effective_time": 2,
+    "web_effect_close": 0,
+    "web_close_time": 0,
+    "business": 1,
+    "copy_writing_v2": "欢迎舰长 <%大井盖儿%> 进入直播间",
+    "icon_list": [],
+    "max_delay_time": 7,
+    "trigger_time": 1713631024570116400,
+    "identities": 6,
+    "effect_silent_time": 0,
+    "effective_time_new": 0,
+    "web_dynamic_url_webp": "",
+    "web_dynamic_url_apng": "",
+    "mobile_dynamic_url_webp": "",
+    "wealthy_info": null,
+    "new_style": 0,
+    "is_mystery": false,
+    "uinfo": {
+      "uid": 3108739,
+      "base": {
+        "name": "大井盖儿",
+        "face": "https://i1.hdslb.com/bfs/face/5275dcfb158087ed02232de9e952a8b87317a70c.jpg",
+        "name_color": 0,
+        "is_mystery": false,
+        "risk_ctrl_info": null,
+        "origin_info": null,
+        "official_info": null,
+        "name_color_str": "#00D1F1"
+      },
+      "medal": null,
+      "wealth": {
+        "level": 50,
+        "dm_icon_key": "ChronosWealth_5.png"
+      },
+      "title": null,
+      "guard": {
+        "level": 3,
+        "expired_str": "2024-05-03 23:59:59"
+      },
+      "uhead_frame": null,
+      "guard_leader": null
+    }
+  }
+}

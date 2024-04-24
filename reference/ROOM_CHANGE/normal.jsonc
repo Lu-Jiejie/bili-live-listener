@@ -1,0 +1,12 @@
+{
+  "cmd": "ROOM_CHANGE",
+  "data": {
+      "title": "开始白给CS",
+      "area_id": 371,
+      "parent_area_id": 9,
+      "area_name": "虚拟主播",
+      "parent_area_name": "虚拟主播",
+      "live_key": "320830629635915849",
+      "sub_session_key": "320830629635915849sub_time:1673690546"
+  }
+}

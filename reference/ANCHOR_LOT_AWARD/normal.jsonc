@@ -1,0 +1,31 @@
+{
+  "cmd":"ANCHOR_LOT_AWARD",
+  "data":{
+      "award_dont_popup":1, // 待观察
+      "award_image":"", // 待观察，疑似奖品图片，用于构建样式
+      "award_name":"情书", // 奖品名称
+      "award_num":1, // 奖品数量
+      "award_price_text":"价值52电池", // 奖品价值描述
+      "award_type":1, // 待观察
+      "award_users":[ // 中奖者信息
+          {
+              "bag_id":6465092, // 待观察
+              "color":10512625, // 待观察
+              "face":"https://i1.hdslb.com/bfs/face/fe2a73ec1a4016a60aa69c0053f2835ab644fb4e.jpg", // 中奖者头像
+              "gift_id":31250, // 礼物id
+              "level":34, // 直播等级
+              "num":1, // 数量
+              "uid":11497234, // uid
+              "uname":"智障树上智障果灬" // 名称
+          }
+      ],
+      "id":4579146, // id
+      "lot_status":2, // 待观察
+      "ruid":3494365156608185,// 待观察
+      "url":"https://live.bilibili.com/p/html/live-lottery/anchor-join.html?is_live_half_webview=1&amp;hybrid_biz=live-lottery-anchor&amp;hybrid_half_ui=1,5,100p,100p,000000,0,30,0,0,1;2,5,100p,100p,000000,0,30,0,0,1;3,5,100p,100p,000000,0,30,0,0,1;4,5,100p,100p,000000,0,30,0,0,1;5,5,100p,100p,000000,0,30,0,0,1;6,5,100p,100p,000000,0,30,0,0,1;7,5,100p,100p,000000,0,30,0,0,1;8,5,100p,100p,000000,0,30,0,0,1", // 待观察
+      "web_url":"https://live.bilibili.com/p/html/live-lottery/anchor-join.html" // 待观察
+  },
+  "is_report":false, // 待观察
+  "msg_id":"146501042967552", // 待观察
+  "send_time":1688833308564 // 推送时间
+}

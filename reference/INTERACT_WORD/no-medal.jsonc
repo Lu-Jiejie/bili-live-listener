@@ -1,0 +1,61 @@
+{
+  "cmd": "INTERACT_WORD",
+  "data": {
+    "contribution": {
+      "grade": 0
+    },
+    "contribution_v2": {
+      "grade": 0,
+      "rank_type": "",
+      "text": ""
+    },
+    "core_user_type": 0,
+    "dmscore": 51,
+    "fans_medal": null,
+    "group_medal": null,
+    "identities": [
+      6,
+      1
+    ],
+    "is_mystery": false,
+    "is_spread": 0,
+    "msg_type": 1,
+    "privilege_type": 3,
+    "roomid": 545068,
+    "score": 1713627272750,
+    "spread_desc": "",
+    "spread_info": "",
+    "tail_icon": 0,
+    "tail_text": "",
+    "timestamp": 1713627272,
+    "trigger_time": 1713627271604058000,
+    "uid": 289470390,
+    "uinfo": {
+      "base": {
+        "face": "https://i0.hdslb.com/bfs/face/c36e369dd7e359a6ae9a855d728d5db8f6575b3c.jpg",
+        "is_mystery": false,
+        "name": "薯门-异羽高",
+        "name_color": 0,
+        "name_color_str": "#00D1F1",
+        "official_info": null,
+        "origin_info": null,
+        "risk_ctrl_info": null
+      },
+      "guard": {
+        "expired_str": "2024-05-20 23:59:59",
+        "level": 3
+      },
+      "guard_leader": null,
+      "medal": null,
+      "title": null,
+      "uhead_frame": null,
+      "uid": 289470390,
+      "wealth": {
+        "dm_icon_key": "",
+        "level": 30
+      }
+    },
+    "uname": "薯门-异羽高",
+    "uname_color": "#00D1F1"
+  }
+}

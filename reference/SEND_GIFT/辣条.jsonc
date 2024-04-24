@@ -1,0 +1,142 @@
+{
+  "cmd": "SEND_GIFT",
+  "data": {
+    "action": "投喂",
+    "bag_gift": null,
+    "batch_combo_id": "",
+    "batch_combo_send": null,
+    "beatId": "",
+    "biz_source": "live",
+    "blind_gift": null,
+    "broadcast_id": 0,
+    "coin_type": "silver",
+    "combo_resources_id": 1,
+    "combo_send": null,
+    "combo_stay_time": 5,
+    "combo_total_coin": 0,
+    "crit_prob": 0,
+    "demarcation": 1,
+    "discount_price": 0,
+    "dmscore": 50,
+    "draw": 0,
+    "effect": 0,
+    "effect_block": 1,
+    "face": "http://i2.hdslb.com/bfs/face/64167b0c938adafa6f45bc2185df2f4fb8b58583.jpg",
+    "face_effect_id": 0,
+    "face_effect_type": 0,
+    "float_sc_resource_id": 0,
+    "giftId": 1,
+    "giftName": "辣条",
+    "giftType": 5,
+    "gift_tag": [],
+    "gold": 0,
+    "group_medal": null,
+    "guard_level": 0,
+    "is_first": true,
+    "is_join_receiver": false,
+    "is_naming": false,
+    "is_special_batch": 0,
+    "magnification": 1,
+    "medal_info": {
+      "anchor_roomid": 0,
+      "anchor_uname": "",
+      "guard_level": 0,
+      "icon_id": 0,
+      "is_lighted": 1,
+      "medal_color": 13081892,
+      "medal_color_border": 13081892,
+      "medal_color_end": 13081892,
+      "medal_color_start": 13081892,
+      "medal_level": 19,
+      "medal_name": "德云色",
+      "special": "",
+      "target_id": 8739477
+    },
+    "name_color": "",
+    "num": 1,
+    "original_gift_name": "",
+    "price": 100,
+    "rcost": 315105719,
+    "receive_user_info": {
+      "uid": 8739477,
+      "uname": "老实憨厚的笑笑"
+    },
+    "receiver_uinfo": {
+      "base": {
+        "face": "https://i0.hdslb.com/bfs/face/59da329a536b148b0e8d19143b686d2da06dad93.jpg",
+        "is_mystery": false,
+        "name": "老实憨厚的笑笑",
+        "name_color": 0,
+        "name_color_str": "",
+        "official_info": {
+          "desc": "",
+          "role": 2,
+          "title": "bilibili 2022百大UP主、2022直播年度弹幕人气奖UP主、职业游戏解说孙亚龙",
+          "type": 0
+        },
+        "origin_info": {
+          "face": "https://i0.hdslb.com/bfs/face/59da329a536b148b0e8d19143b686d2da06dad93.jpg",
+          "name": "老实憨厚的笑笑"
+        },
+        "risk_ctrl_info": {
+          "face": "https://i0.hdslb.com/bfs/face/59da329a536b148b0e8d19143b686d2da06dad93.jpg",
+          "name": "老实憨厚的笑笑"
+        }
+      },
+      "guard": null,
+      "guard_leader": null,
+      "medal": null,
+      "title": null,
+      "uhead_frame": null,
+      "uid": 8739477,
+      "wealth": null
+    },
+    "remain": 0,
+    "rnd": "4499158310355815936",
+    "send_master": null,
+    "sender_uinfo": {
+      "base": {
+        "face": "http://i2.hdslb.com/bfs/face/64167b0c938adafa6f45bc2185df2f4fb8b58583.jpg",
+        "is_mystery": false,
+        "name": "冰川和企鹅",
+        "name_color": 0,
+        "name_color_str": "",
+        "official_info": {
+          "desc": "",
+          "role": 0,
+          "title": "",
+          "type": -1
+        },
+        "origin_info": {
+          "face": "http://i2.hdslb.com/bfs/face/64167b0c938adafa6f45bc2185df2f4fb8b58583.jpg",
+          "name": "冰川和企鹅"
+        },
+        "risk_ctrl_info": {
+          "face": "http://i2.hdslb.com/bfs/face/64167b0c938adafa6f45bc2185df2f4fb8b58583.jpg",
+          "name": "冰川和企鹅"
+        }
+      },
+      "guard": null,
+      "guard_leader": null,
+      "medal": null,
+      "title": null,
+      "uhead_frame": null,
+      "uid": 9639461,
+      "wealth": null
+    },
+    "silver": 0,
+    "super": 0,
+    "super_batch_gift_num": 0,
+    "super_gift_num": 0,
+    "svga_block": 0,
+    "switch": true,
+    "tag_image": "",
+    "tid": "4499158310355815936",
+    "timestamp": 1713627362,
+    "top_list": null,
+    "total_coin": 100,
+    "uid": 9639461,
+    "uname": "冰川和企鹅",
+    "wealth_level": 4
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "cmd": "SEND_GIFT",
+  "data": {
+    "action": "投喂",
+    "bag_gift": null,
+    "batch_combo_id": "batch:gift:combo_id:477844045:8739477:31164:1713627768.7318",
+    "batch_combo_send": {
+      "action": "投喂",
+      "batch_combo_id": "batch:gift:combo_id:477844045:8739477:31164:1713627768.7318",
+      "batch_combo_num": 1,
+      "blind_gift": null,
+      "gift_id": 31164,
+      "gift_name": "粉丝团灯牌",
+      "gift_num": 1,
+      "send_master": null,
+      "uid": 477844045,
+      "uname": "wasp111"
+    },
+    "beatId": "",
+    "biz_source": "live",
+    "blind_gift": null,
+    "broadcast_id": 0,
+    "coin_type": "gold",
+    "combo_resources_id": 1,
+    "combo_send": {
+      "action": "投喂",
+      "combo_id": "gift:combo_id:477844045:8739477:31164:1713627768.7306",
+      "combo_num": 1,
+      "gift_id": 31164,
+      "gift_name": "粉丝团灯牌",
+      "gift_num": 1,
+      "send_master": null,
+      "uid": 477844045,
+      "uname": "wasp111"
+    },
+    "combo_stay_time": 5,
+    "combo_total_coin": 1000,
+    "crit_prob": 0,
+    "demarcation": 2,
+    "discount_price": 1000,
+    "dmscore": 14,
+    "draw": 0,
+    "effect": 3,
+    "effect_block": 0,
+    "face": "https://i1.hdslb.com/bfs/face/56d3445ad8f437bf975182de1e45232e8b8968e7.jpg",
+    "face_effect_id": 0,
+    "face_effect_type": 0,
+    "float_sc_resource_id": 0,
+    "giftId": 31164,
+    "giftName": "粉丝团灯牌",
+    "giftType": 0,
+    "gift_tag": [],
+    "gold": 0,
+    "group_medal": null,
+    "guard_level": 0,
+    "is_first": true,
+    "is_join_receiver": false,
+    "is_naming": false,
+    "is_special_batch": 0,
+    "magnification": 1,
+    "medal_info": {
+      "anchor_roomid": 0,
+      "anchor_uname": "",
+      "guard_level": 0,
+      "icon_id": 0,
+      "is_lighted": 0,
+      "medal_color": 0,
+      "medal_color_border": 0,
+      "medal_color_end": 0,
+      "medal_color_start": 0,
+      "medal_level": 0,
+      "medal_name": "",
+      "special": "",
+      "target_id": 0
+    },
+    "name_color": "",
+    "num": 1,
+    "original_gift_name": "",
+    "price": 1000,
+    "rcost": 315105790,
+    "receive_user_info": {
+      "uid": 8739477,
+      "uname": "老实憨厚的笑笑"
+    },
+    "receiver_uinfo": {
+      "base": {
+        "face": "https://i0.hdslb.com/bfs/face/59da329a536b148b0e8d19143b686d2da06dad93.jpg",
+        "is_mystery": false,
+        "name": "老实憨厚的笑笑",
+        "name_color": 0,
+        "name_color_str": "",
+        "official_info": {
+          "desc": "",
+          "role": 2,
+          "title": "bilibili 2022百大UP主、2022直播年度弹幕人气奖UP主、职业游戏解说孙亚龙",
+          "type": 0
+        },
+        "origin_info": {
+          "face": "https://i0.hdslb.com/bfs/face/59da329a536b148b0e8d19143b686d2da06dad93.jpg",
+          "name": "老实憨厚的笑笑"
+        },
+        "risk_ctrl_info": {
+          "face": "https://i0.hdslb.com/bfs/face/59da329a536b148b0e8d19143b686d2da06dad93.jpg",
+          "name": "老实憨厚的笑笑"
+        }
+      },
+      "guard": null,
+      "guard_leader": null,
+      "medal": null,
+      "title": null,
+      "uhead_frame": null,
+      "uid": 8739477,
+      "wealth": null
+    },
+    "remain": 0,
+    "rnd": "4499160014027534848",
+    "send_master": null,
+    "sender_uinfo": {
+      "base": {
+        "face": "https://i1.hdslb.com/bfs/face/56d3445ad8f437bf975182de1e45232e8b8968e7.jpg",
+        "is_mystery": false,
+        "name": "wasp111",
+        "name_color": 0,
+        "name_color_str": "",
+        "official_info": {
+          "desc": "",
+          "role": 0,
+          "title": "",
+          "type": -1
+        },
+        "origin_info": {
+          "face": "https://i1.hdslb.com/bfs/face/56d3445ad8f437bf975182de1e45232e8b8968e7.jpg",
+          "name": "wasp111"
+        },
+        "risk_ctrl_info": {
+          "face": "https://i1.hdslb.com/bfs/face/56d3445ad8f437bf975182de1e45232e8b8968e7.jpg",
+          "name": "wasp111"
+        }
+      },
+      "guard": null,
+      "guard_leader": null,
+      "medal": null,
+      "title": null,
+      "uhead_frame": null,
+      "uid": 477844045,
+      "wealth": null
+    },
+    "silver": 0,
+    "super": 0,
+    "super_batch_gift_num": 1,
+    "super_gift_num": 1,
+    "svga_block": 0,
+    "switch": true,
+    "tag_image": "",
+    "tid": "4499160014027534848",
+    "timestamp": 1713627768,
+    "top_list": null,
+    "total_coin": 1000,
+    "uid": 477844045,
+    "uname": "wasp111",
+    "wealth_level": 0
+  },
+  "msg_id": "13145938966630401:100:1000",
+  "p_is_ack": true,
+  "p_msg_type": 1,
+  "send_time": 1713627768715
+}

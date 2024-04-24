@@ -1,0 +1,128 @@
+{
+  "cmd": "DANMU_MSG",
+  "info": [
+    [
+      0,
+      1,
+      25,
+      5816798,
+      1713496477789,
+      575878827,
+      0,
+      "5c8de9db",
+      0,
+      0,
+      0,
+      "",
+      1,
+      {
+        "bulge_display": 1,
+        "emoticon_unique": "upower_[乖乖雪糕_哈哈]",
+        "height": 20,
+        "in_player_area": 1,
+        "is_dynamic": 0,
+        "url": "https://i0.hdslb.com/bfs/garb/0371ead61093a5eec1c884c6d5cfa5deb445d82d.png",
+        "width": 20
+      },
+      "{}",
+      {
+        "mode": 0,
+        "show_player_type": 0,
+        "extra": "{\"send_from_me\":false,\"mode\":0,\"color\":5816798,\"dm_type\":1,\"font_size\":25,\"player_mode\":1,\"show_player_type\":0,\"content\":\"[乖乖雪糕_哈哈]\",\"user_hash\":\"1552804315\",\"emoticon_unique\":\"upower_[乖乖雪糕_哈哈]\",\"bulge_display\":1,\"recommend_score\":0,\"main_state_dm_color\":\"\",\"objective_state_dm_color\":\"\",\"direction\":0,\"pk_direction\":0,\"quartet_direction\":0,\"anniversary_crowd\":0,\"yeah_space_type\":\"\",\"yeah_space_url\":\"\",\"jump_to_url\":\"\",\"space_type\":\"\",\"space_url\":\"\",\"animation\":{},\"emots\":null,\"is_audited\":false,\"id_str\":\"5d252e882e0cde8e6a7da73cf16621e131\",\"icon\":null,\"show_reply\":true,\"reply_mid\":0,\"reply_uname\":\"\",\"reply_uname_color\":\"\",\"reply_is_mystery\":false,\"hit_combo\":0}",
+        "user": {
+          "uid": 360709723,
+          "base": {
+            "name": "Baileywy",
+            "face": "https://i0.hdslb.com/bfs/face/member/noface.jpg",
+            "name_color": 0,
+            "is_mystery": false,
+            "risk_ctrl_info": null,
+            "origin_info": {
+              "name": "Baileywy",
+              "face": "https://i0.hdslb.com/bfs/face/member/noface.jpg"
+            },
+            "official_info": {
+              "role": 0,
+              "title": "",
+              "desc": "",
+              "type": -1
+            },
+            "name_color_str": ""
+          },
+          "medal": null,
+          "wealth": null,
+          "title": {
+            "old_title_css_id": "",
+            "title_css_id": ""
+          },
+          "guard": null,
+          "uhead_frame": null,
+          "guard_leader": {
+            "is_guard_leader": false
+          }
+        }
+      },
+      {
+        "activity_identity": "",
+        "activity_source": 0,
+        "not_show": 0
+      },
+      0
+    ],
+    "[乖乖雪糕_哈哈]",
+    [
+      360709723,
+      "Baileywy",
+      0,
+      0,
+      0,
+      10000,
+      1,
+      "" // 显示的用户名的色号
+    ],
+    [
+      12,
+      "boba",
+      "帅比笙歌超可爱OvO",
+      573893,
+      9272486,
+      "",
+      0,
+      9272486,
+      9272486,
+      9272486,
+      0,
+      1,
+      15641218
+    ],
+    [
+      0,
+      0,
+      9868950,
+      ">50000",
+      0
+    ],
+    [
+      "",
+      ""
+    ],
+    0,
+    0,
+    null,
+    {
+      "ts": 1713496477,
+      "ct": "12D1E1F7"
+    },
+    0,
+    0,
+    null,
+    null,
+    0,
+    77,
+    [
+      5
+    ],
+    null
+  ],
+  "dm_v2": ""
+}

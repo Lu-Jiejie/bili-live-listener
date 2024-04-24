@@ -1,0 +1,81 @@
+{
+  "cmd": "LIKE_INFO_V3_CLICK",
+  "data": {
+    "contribution_info": {
+      "grade": 0
+    },
+    "dmscore": 36,
+    "fans_medal": {
+      "anchor_roomid": 0,
+      "guard_level": 0,
+      "icon_id": 0,
+      "is_lighted": 0,
+      "medal_color": 1725515,
+      "medal_color_border": 12632256,
+      "medal_color_end": 12632256,
+      "medal_color_start": 12632256,
+      "medal_level": 22,
+      "medal_name": "小孩梓",
+      "score": 50003171,
+      "special": "",
+      "target_id": 7706705
+    },
+    "group_medal": null,
+    "identities": [
+      1
+    ],
+    "is_mystery": false,
+    "like_icon": "https://i0.hdslb.com/bfs/live/23678e3d90402bea6a65251b3e728044c21b1f0f.png",
+    "like_text": "为主播点赞了",
+    "msg_type": 6,
+    "show_area": 0,
+    "uid": 15253584,
+    "uinfo": {
+      "base": {
+        "face": "https://i0.hdslb.com/bfs/face/9eeb889c3a709a94f3893ceda8e1f0d3c222f698.jpg",
+        "is_mystery": false,
+        "name": "鹿解解",
+        "name_color": 0,
+        "name_color_str": "",
+        "official_info": {
+          "desc": "",
+          "role": 0,
+          "title": "",
+          "type": -1
+        },
+        "origin_info": {
+          "face": "https://i0.hdslb.com/bfs/face/9eeb889c3a709a94f3893ceda8e1f0d3c222f698.jpg",
+          "name": "鹿解解"
+        },
+        "risk_ctrl_info": null
+      },
+      "guard": {
+        "expired_str": "",
+        "level": 0
+      },
+      "guard_leader": null,
+      "medal": {
+        "color": 1725515,
+        "color_border": 12632256,
+        "color_end": 12632256,
+        "color_start": 12632256,
+        "guard_icon": "",
+        "guard_level": 0,
+        "honor_icon": "",
+        "id": 0,
+        "is_light": 0,
+        "level": 22,
+        "name": "小孩梓",
+        "ruid": 7706705,
+        "score": 50003171,
+        "typ": 0
+      },
+      "title": null,
+      "uhead_frame": null,
+      "uid": 15253584,
+      "wealth": null
+    },
+    "uname": "鹿解解",
+    "uname_color": ""
+  }
+}

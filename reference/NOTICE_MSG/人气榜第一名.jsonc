@@ -1,0 +1,46 @@
+{
+  "cmd": "NOTICE_MSG",
+  "id": 804,
+  "name": "人气榜第一名",
+  "full": {
+    "head_icon": "https://i0.hdslb.com/bfs/live/f74b09c7fb83123a0dd66c536b6d5b143d271b08.png",
+    "tail_icon": "https://i0.hdslb.com/bfs/live/822da481fdaba986d738db5d8fd469ffa95a8fa1.webp",
+    "head_icon_fa": "https://i0.hdslb.com/bfs/live/f74b09c7fb83123a0dd66c536b6d5b143d271b08.png",
+    "tail_icon_fa": "https://i0.hdslb.com/bfs/live/38cb2a9f1209b16c0f15162b0b553e3b28d9f16f.png",
+    "head_icon_fan": 1,
+    "tail_icon_fan": 4,
+    "background": "#FFE6BD",
+    "color": "#9D5412",
+    "highlight": "#FF6933",
+    "time": 20
+  },
+  "half": {
+    "head_icon": "https://i0.hdslb.com/bfs/live/f74b09c7fb83123a0dd66c536b6d5b143d271b08.png",
+    "tail_icon": "https://i0.hdslb.com/bfs/live/822da481fdaba986d738db5d8fd469ffa95a8fa1.webp",
+    "background": "#FFE6BD",
+    "color": "#9D5412",
+    "highlight": "#FF6933",
+    "time": 0
+  },
+  "side": {
+    "head_icon": "",
+    "background": "",
+    "color": "",
+    "highlight": "",
+    "border": ""
+  },
+  "roomid": 6136246,
+  "real_roomid": 6136246,
+  "msg_common": "恭喜主播<%凉哈皮%>荣获上小时人气榜第<%1%>名！点击传送查看精彩内容！",
+  "msg_self": "恭喜主播<%凉哈皮%>荣获上小时人气榜第<%1%>名！",
+  "link_url": "https://live.bilibili.com/6136246?broadcast_type=0&is_room_feed=1&from=28003&extra_jump_from=28003",
+  "msg_type": 1,
+  "shield_uid": -1,
+  "business_id": "",
+  "scatter": {
+    "min": 0,
+    "max": 0
+  },
+  "marquee_id": "",
+  "notice_type": 0
+}

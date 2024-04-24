@@ -1,0 +1,48 @@
+{
+  "cmd": "ANCHOR_LOT_START",
+  "data": {
+    "asset_icon": "https://i0.hdslb.com/bfs/live/627ee2d9e71c682810e7dc4400d5ae2713442c02.png", // 不重要，用来构建样式的图片
+    "asset_icon_webp": "https://i0.hdslb.com/bfs/live/b47453a0d42f30673b6d030159a96d07905d677a.webp", // 不重要，用来构建样式的图片
+    "award_image": "", // 待观察，疑似奖品图片，用于构建样式
+    "award_name": "情书", // 奖品名称
+    "award_num": 1, // 奖品数量
+    "award_price_text": "价值52电池", // 奖品价值描述
+    "award_type": 1, // 待观察
+    "cur_gift_num": 0, // 待观察
+    "current_time": 1688832408, // 天选开始时间，结束时间应该是 + max_time
+    "danmu": "姐姐贴贴", // 需要发送的弹幕
+    "danmu_new": [ // 待观察
+      {
+        "danmu": "姐姐贴贴",
+        "danmu_view": "",
+        "reject": false
+      }
+    ],
+    "danmu_type": 0, // 待观察
+    "gift_id": 0, // 待观察，疑似需要赠送的礼物id，也许是为了需要赠送礼物来参加的天选准备的
+    "gift_name": "", // 待观察，疑似需要赠送的礼物名称，也许是为了需要赠送礼物来参加的天选准备的
+    "gift_num": 0, // 待观察，疑似需要赠送的礼物数量，也许是为了需要赠送礼物来参加的天选准备的
+    "gift_price": 0, // 待观察，疑似需要赠送的价格，也许是为了需要赠送礼物来参加的天选准备的
+    "goaway_time": 180, // 待观察
+    "goods_id": -99998, // 待观察
+    "id": 4579146, // id
+    "is_broadcast": 1, // 待观察
+    "join_type": 0, // 待观察
+    "lot_status": 0, // 待观察
+    "max_time": 900, // 持续时间，单位秒
+    "require_text": "关注主播", // 待观察，看起来应该是用于参与条件中的是否关注主播？也可能有其他情况，应该是 require_type 对应的内容
+    "require_type": 1, // 待观察，目前已知，1:关注主播
+    "require_value": 0, // 待观察
+    "room_id": 30118851, // 房间号
+    "send_gift_ensure": 0, // 待观察
+    "show_panel": 1, // 待观察
+    "start_dont_popup": 0, // 待观察
+    "status": 1, // 待观察
+    "time": 899, // 剩余时间，单位秒
+    "url": "https://live.bilibili.com/p/html/live-lottery/anchor-join.html?is_live_half_webview=1&amp;hybrid_biz=live-lottery-anchor&amp;hybrid_half_ui=1,5,100p,100p,000000,0,30,0,0,1;2,5,100p,100p,000000,0,30,0,0,1;3,5,100p,100p,000000,0,30,0,0,1;4,5,100p,100p,000000,0,30,0,0,1;5,5,100p,100p,000000,0,30,0,0,1;6,5,100p,100p,000000,0,30,0,0,1;7,5,100p,100p,000000,0,30,0,0,1;8,5,100p,100p,000000,0,30,0,0,1", // 待观察，看起来像是天选框样式
+    "web_url": "https://live.bilibili.com/p/html/live-lottery/anchor-join.html" // 待观察，看起来像是天选框样式
+  },
+  "is_report": false, // 待观察
+  "msg_id": "146029755244032", // id
+  "send_time": 1688832409654 // 推送时间
+}

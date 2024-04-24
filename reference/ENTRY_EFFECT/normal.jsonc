@@ -1,0 +1,76 @@
+{
+  "cmd": "ENTRY_EFFECT",
+  "data": {
+    "id": 2,
+    "uid": 278449453,
+    "target_id": 8739477,
+    "mock_effect": 0,
+    "face": "https://i1.hdslb.com/bfs/face/c03c2aa4545d1804d4e6fce6150ab8f8138375af.jpg",
+    "privilege_type": 2,
+    "copy_writing": "欢迎提督 <%飞哥飞飞飞飞飞...%> 进入直播间",
+    "copy_color": "#ffffff",
+    "highlight_color": "#FFF100",
+    "priority": 1,
+    "basemap_url": "https://i0.hdslb.com/bfs/live/mlive/74a41c65e422116d230d433042881fa5556f7870.png",
+    "show_avatar": 1,
+    "effective_time": 3,
+    "web_basemap_url": "https://i0.hdslb.com/bfs/live/mlive/74a41c65e422116d230d433042881fa5556f7870.png",
+    "web_effective_time": 3,
+    "web_effect_close": 0,
+    "web_close_time": 0,
+    "business": 1,
+    "copy_writing_v2": "欢迎提督 <%飞哥飞飞飞飞…%> 进入直播间",
+    "icon_list": [],
+    "max_delay_time": 7,
+    "trigger_time": 1713630018063956200,
+    "identities": 7,
+    "effect_silent_time": 0,
+    "effective_time_new": 0,
+    "web_dynamic_url_webp": "",
+    "web_dynamic_url_apng": "",
+    "mobile_dynamic_url_webp": "",
+    "wealthy_info": null,
+    "new_style": 0,
+    "is_mystery": false,
+    "uinfo": {
+      "uid": 278449453,
+      "base": {
+        "name": "飞哥飞飞飞飞飞飞",
+        "face": "https://i1.hdslb.com/bfs/face/c03c2aa4545d1804d4e6fce6150ab8f8138375af.jpg",
+        "name_color": 0,
+        "is_mystery": false,
+        "risk_ctrl_info": null,
+        "origin_info": null,
+        "official_info": null,
+        "name_color_str": "#E17AFF"
+      },
+      "medal": {
+        "name": "德云色",
+        "level": 29,
+        "color_start": 2951253,
+        "color_end": 10329087,
+        "color_border": 16771156,
+        "color": 2951253,
+        "id": 0,
+        "typ": 0,
+        "is_light": 1,
+        "ruid": 8739477,
+        "guard_level": 2,
+        "score": 50549164,
+        "guard_icon": "",
+        "honor_icon": ""
+      },
+      "wealth": {
+        "level": 39,
+        "dm_icon_key": ""
+      },
+      "title": null,
+      "guard": {
+        "level": 2,
+        "expired_str": "2024-09-24 23:59:59"
+      },
+      "uhead_frame": null,
+      "guard_leader": null
+    }
+  }
+}

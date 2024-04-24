@@ -1,0 +1,46 @@
+{
+  "cmd": "NOTICE_MSG",
+  "id": 968,
+  "name": "舰长1个月",
+  "full": {
+    "head_icon": "https://i0.hdslb.com/bfs/live/82665c9d263c8673f3f934e23d09c1d0f6bc8f50.png",
+    "tail_icon": "",
+    "head_icon_fa": "https://i0.hdslb.com/bfs/live/82665c9d263c8673f3f934e23d09c1d0f6bc8f50.png",
+    "tail_icon_fa": "",
+    "head_icon_fan": 1,
+    "tail_icon_fan": 0,
+    "background": "#FFE2B2",
+    "color": "#B87436",
+    "highlight": "#E37921",
+    "time": 10
+  },
+  "half": {
+    "head_icon": "",
+    "tail_icon": "",
+    "background": "",
+    "color": "",
+    "highlight": "",
+    "time": 0
+  },
+  "side": {
+    "head_icon": "https://i0.hdslb.com/bfs/live/82665c9d263c8673f3f934e23d09c1d0f6bc8f50.png",
+    "background": "#FFE9C8FF",
+    "color": "#EF903AFF",
+    "highlight": "#D54900FF",
+    "border": "#FFCFA4FF"
+  },
+  "roomid": 545068,
+  "real_roomid": 545068,
+  "msg_common": "",
+  "msg_self": "<%--为什么--%> 在主播 <%老实憨厚的笑笑%>的直播间开通了舰长，感谢上船陪伴",
+  "link_url": "",
+  "msg_type": 4,
+  "shield_uid": -1,
+  "business_id": "xuser-guard",
+  "scatter": {
+    "min": 0,
+    "max": 0
+  },
+  "marquee_id": "",
+  "notice_type": 0
+}

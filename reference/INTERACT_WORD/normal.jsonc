@@ -1,0 +1,90 @@
+{
+  "cmd": "INTERACT_WORD",
+  "data": {
+    "contribution": {
+      "grade": 0
+    },
+    "contribution_v2": {
+      "grade": 0,
+      "rank_type": "",
+      "text": ""
+    },
+    "core_user_type": 0,
+    "dmscore": 27,
+    "fans_medal": {
+      "anchor_roomid": 25150536,
+      "guard_level": 0,
+      "icon_id": 0,
+      "is_lighted": 1,
+      "medal_color": 1725515,
+      "medal_color_border": 1725515,
+      "medal_color_end": 5414290,
+      "medal_color_start": 1725515,
+      "medal_level": 22,
+      "medal_name": "辅导原",
+      "score": 50002196,
+      "special": "",
+      "target_id": 1204426852
+    },
+    "group_medal": null,
+    "identities": [
+      3,
+      1
+    ],
+    "is_mystery": false,
+    "is_spread": 0,
+    "msg_type": 1,
+    "privilege_type": 0,
+    "roomid": 545068,
+    "score": 1763639456612,
+    "spread_desc": "",
+    "spread_info": "",
+    "tail_icon": 0,
+    "tail_text": "",
+    "timestamp": 1713627260,
+    "trigger_time": 1713627259524730600,
+    "uid": 278517010,
+    "uinfo": {
+      "base": {
+        "face": "https://i1.hdslb.com/bfs/face/90f9f7a95f01aea24678fdd52bb69297381f7139.jpg",
+        "is_mystery": false,
+        "name": "牡丹江腕力金少",
+        "name_color": 0,
+        "name_color_str": "",
+        "official_info": null,
+        "origin_info": null,
+        "risk_ctrl_info": null
+      },
+      "guard": {
+        "expired_str": "",
+        "level": 0
+      },
+      "guard_leader": null,
+      "medal": {
+        "color": 1725515,
+        "color_border": 1725515,
+        "color_end": 5414290,
+        "color_start": 1725515,
+        "guard_icon": "",
+        "guard_level": 0,
+        "honor_icon": "",
+        "id": 0,
+        "is_light": 1,
+        "level": 22,
+        "name": "辅导原",
+        "ruid": 1204426852,
+        "score": 50002196,
+        "typ": 0
+      },
+      "title": null,
+      "uhead_frame": null,
+      "uid": 278517010,
+      "wealth": {
+        "dm_icon_key": "",
+        "level": 26
+      }
+    },
+    "uname": "牡丹江腕力金少",
+    "uname_color": ""
+  }
+}

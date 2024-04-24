@@ -1,0 +1,120 @@
+{
+  "cmd": "DANMU_MSG",
+  "info": [
+    [
+      0,
+      4,
+      25,
+      14893055,
+      1713493645295,
+      760073161,
+      0,
+      "650b13c6",
+      0,
+      0,
+      5,
+      "#1453BAFF,#4C2263A2,#3353BAFF",
+      0,
+      "{}",
+      "{}",
+      {
+        "mode": 0,
+        "show_player_type": 0,
+        "extra": "{\"send_from_me\":false,\"mode\":0,\"color\":14893055,\"dm_type\":0,\"font_size\":25,\"player_mode\":4,\"show_player_type\":0,\"content\":\"粘黄芥末酱\",\"user_hash\":\"1695224774\",\"emoticon_unique\":\"\",\"bulge_display\":0,\"recommend_score\":9,\"main_state_dm_color\":\"\",\"objective_state_dm_color\":\"\",\"direction\":0,\"pk_direction\":0,\"quartet_direction\":0,\"anniversary_crowd\":0,\"yeah_space_type\":\"\",\"yeah_space_url\":\"\",\"jump_to_url\":\"\",\"space_type\":\"\",\"space_url\":\"\",\"animation\":{},\"emots\":null,\"is_audited\":false,\"id_str\":\"23d61cb9ebabf9201bd4507b5b6621d646\",\"icon\":null,\"show_reply\":true,\"reply_mid\":0,\"reply_uname\":\"\",\"reply_uname_color\":\"\",\"reply_is_mystery\":false,\"hit_combo\":0}",
+        "user": {
+          "uid": 33948208,
+          "base": {
+            "name": "不投币只改名的屑",
+            "face": "https://i1.hdslb.com/bfs/face/4e8e6c2d9a5e60d926ff04138e0a5ece1b4d7b38.jpg",
+            "name_color": 0,
+            "is_mystery": false,
+            "risk_ctrl_info": null,
+            "origin_info": {
+              "name": "不投币只改名的屑",
+              "face": "https://i1.hdslb.com/bfs/face/4e8e6c2d9a5e60d926ff04138e0a5ece1b4d7b38.jpg"
+            },
+            "official_info": {
+              "role": 0,
+              "title": "",
+              "desc": "",
+              "type": -1
+            },
+            "name_color_str": ""
+          },
+          "medal": null,
+          "wealth": null,
+          "title": {
+            "old_title_css_id": "",
+            "title_css_id": ""
+          },
+          "guard": null,
+          "uhead_frame": null,
+          "guard_leader": {
+            "is_guard_leader": false
+          }
+        }
+      },
+      {
+        "activity_identity": "",
+        "activity_source": 0,
+        "not_show": 0
+      },
+      43
+    ],
+    "粘黄芥末酱",
+    [
+      33948208,
+      "不投币只改名的屑",
+      0,
+      0,
+      0,
+      10000,
+      1,
+      "#00D1F1"
+    ],
+    [
+      26,
+      "雪撬犬",
+      "雪糕cheese",
+      27183290,
+      398668,
+      "",
+      0,
+      6809855,
+      398668,
+      6850801,
+      3,
+      1,
+      3493139945884106
+    ],
+    [
+      19,
+      0,
+      6406234,
+      ">50000",
+      0
+    ],
+    [
+      "",
+      ""
+    ],
+    0,
+    3,
+    null,
+    {
+      "ts": 1713493645,
+      "ct": "60996766"
+    },
+    0,
+    0,
+    null,
+    null,
+    0,
+    663,
+    [
+      30
+    ],
+    null
+  ],
+  "dm_v2": ""
+}

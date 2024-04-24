@@ -10,4 +10,5 @@ logs
 node_modules
 temp
 src/start.ts
-reference
+reference/*
+!/reference/**/

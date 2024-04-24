@@ -1,0 +1,64 @@
+{
+  "cmd": "SUPER_CHAT_MESSAGE",
+  "data": {
+    "background_bottom_color": "#427D9E", // 主色调 sc文字下面的背景色
+    "background_color": "#DBFFFD", // sc文字上面的背景色
+    "background_color_end": "#29718B",
+    "background_color_start": "#4EA4C5",
+    "background_icon": "",
+    "background_image": "https://i0.hdslb.com/bfs/live/a712efa5c6ebc67bafbe8352d3e74b820a00c13e.png",
+    "background_price_color": "#7DA4BD",
+    "color_point": 0.7,
+    "dmscore": 120,
+    "end_time": 1664465187,
+    "gift": {
+      "gift_id": 12000,
+      "gift_name": "醒目留言",
+      "num": 1
+    },
+    "id": 5179121,
+    "is_ranked": 0,
+    "is_send_audit": 1,
+    "medal_info": {
+      "anchor_roomid": 7777,
+      "anchor_uname": "老实憨厚的笑笑",
+      "guard_level": 3,
+      "icon_id": 0,
+      "is_lighted": 1,
+      "medal_color": "#2d0855", // original
+      "medal_color_border": 6809855,
+      "medal_color_end": 10329087,
+      "medal_color_start": 2951253,
+      "medal_level": 30,
+      "medal_name": "德云色",
+      "special": "",
+      "target_id": 8739477
+    },
+    "message": "可以喊车神和光神拍sdm和lsl吗我想看",
+    "message_font_color": "#A3F6FF",
+    "message_trans": "",
+    "price": 50,
+    "rate": 1000,
+    "start_time": 1664465067,
+    "time": 120,
+    "token": "35647666",
+    "trans_mark": 0,
+    "ts": 1664465067,
+    "uid": 12777723,
+    "user_info": {
+      "face": "http://i0.hdslb.com/bfs/face/fefbebbe3b9bb409475d5a40d9db16f2f0305f85.jpg",
+      "face_frame": "https://i0.hdslb.com/bfs/live/80f732943cc3367029df65e267960d56736a82ee.png",
+      "guard_level": 3,
+      "is_main_vip": 1,
+      "is_svip": 0,
+      "is_vip": 0,
+      "level_color": "#5896de",
+      "manager": 0,
+      "name_color": "#00D1F1",
+      "title": "title-635-1",
+      "uname": "卡纸哥我宣你",
+      "user_level": 30
+    }
+  },
+  "roomid": 545068
+}
