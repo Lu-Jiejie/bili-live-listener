@@ -1,4 +1,4 @@
-export { default as BiliLive } from './BiliLive'
+export { default as BiliLive, type BiliLiveOptions, type RemoveHandler } from './BiliLive'
 export { getRoomId, getRoomConf, getLoginedUid } from './utils/request'
 
 // message type

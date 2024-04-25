@@ -1,4 +1,5 @@
 import { KeepLiveTCP } from 'bilibili-live-ws'
+import { KeepLiveWS } from 'bilibili-live-ws/browser'
 
 import type { Message } from './types/message'
 
@@ -52,15 +53,20 @@ const events = [
   AnchorLotEndEvent
 ]
 
-interface BiliLiveOptions {
+export interface BiliLiveOptions {
+  /** 登录状态下获取的key */
   key: string
+  /** 登录状态下的uid */
   uid: number
+  /** 是否在浏览器环境下 */
+  isBrowser?: boolean
 }
 
-type RemoveHandler = () => void
+/** 移除监听器 */
+export type RemoveHandler = () => void
 
 export default class BiliLive {
-  private live: KeepLiveTCP
+  private live: KeepLiveTCP | KeepLiveWS
   private handlers: Record<string, { id: number, callback: Function }[]> = {}
   private handlerIdCounter = 0
 
@@ -91,7 +97,13 @@ export default class BiliLive {
   public onAnchorLotEnd!: (callback: (message: Message<AnchorLotEndData>) => void) => RemoveHandler
 
   constructor(roomId: number, options: BiliLiveOptions) {
-    this.live = new KeepLiveTCP(roomId, options)
+    const { key, uid, isBrowser } = options
+
+    if (isBrowser)
+      this.live = new KeepLiveWS(roomId, { key, uid })
+    else
+      this.live = new KeepLiveTCP(roomId, { key, uid })
+
     this.initEvents()
   }
 
