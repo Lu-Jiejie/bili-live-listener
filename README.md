@@ -106,6 +106,12 @@ const cookie = 'buvid3=...'
 const uid = getLoginedUid(cookie)
 ```
 
+#### isBrowser
+
+是否在浏览器环境下运行，默认为 `false`。
+
+浏览器环境下必须传入 `true`。
+
 ## Instance Methods
 
 ### Common Methods
