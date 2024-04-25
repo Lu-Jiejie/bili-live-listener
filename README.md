@@ -18,7 +18,7 @@ npm i bili-live-listener
 ## Example
 
 ```typescript
-import { BiliLive,  } from 'bili-live-listener'
+import { BiliLive } from 'bili-live-listener'
 
 // 获取直播间长号
 const { longRoomId } = getRoomId(510)
@@ -27,7 +27,8 @@ const { longRoomId } = getRoomId(510)
 // 需要传入登录状态下获取的 key 以及 uid，详情见下方 Options
 const biliLive = new BiliLive(longRoomId, {
   key: 'xxxxxxxx', // your key
-  uid: 12345678 // your logined uid
+  uid: 12345678, // your logined uid
+  // isBrowser: true // if you are in browser environment
 })
 
 // 监听弹幕消息，返回一个移除监听器的函数
@@ -76,7 +77,7 @@ console.log(getRoomId(80397))
 在 `node` 环境下，可以使用本库提供的 `getRoomConf` 函数获取，示例如下：
 
 ```typescript
-import { getRoomConf} from 'bili-live-listener'
+import { getRoomConf } from 'bili-live-listener'
 
 // bilibili.com 中的 cookie，注意不要通过 `document.cookie` 获取，而应该通过浏览器发送请求的请求头中的 `cookie` 属性获取
 const cookie = 'buvid3=...'
