@@ -126,7 +126,9 @@ export default class BiliLive {
             this.handlers[handlerName].forEach(({ callback }) => callback(dataProcessor(data)))
         })
       })
-      ;(this as any)[handlerName] = function (callback: Function): RemoveHandler {
+      // eslint-disable-next-line ts/ban-ts-comment
+      // @ts-expect-error
+      this[handlerName] = function (callback: Function): RemoveHandler {
         return this.addHandler(handlerName, callback)
       }
     })
