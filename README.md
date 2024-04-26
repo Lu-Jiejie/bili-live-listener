@@ -162,6 +162,8 @@ biliLive.onRawMessage('DANMU_MSG',(message) => {
 | onRoomChange  | [RoomChangeData](src/events/RoomChange.ts) | 房间信息变动（标题、分区）                     |
 | onAnchorLotStart | [AnchorLotStartData](src/events/AnchorLotStart.ts) | 天选时刻开始                     |
 | onAnchorLotEnd | [AnchorLotEndData](src/events/AnchorLotEnd.ts) | 天选时刻结束                     |
+| onRedPocketStart | [RedPocketStartData](src/events/RedPocketStart.ts) | 红包抽奖开始                     |
+| onRedPocketEnd | [RedPocketEndData](src/events/RedPocketEnd.ts) | 红包抽奖结束                     |
 
 值得注意的是，这些 `Message Methods` 都会返回一个移除监听器的函数，你可以调用这个函数来移除监听器，参考 [这里](#example)
 
@@ -181,129 +183,11 @@ export interface Message<T> {
   /** 原生消息 */
   raw: any
 }
-
-// 用户信息
-export interface User {
-  /** 用户Id */
-  uid: number
-  /** 用户名 */
-  uname: string
-  /** 用户头像 */
-  face?: string
-  /** 用户头像框 */
-  faceFrame?: string
-  /** 用户当前佩戴的粉丝勋章 */
-  fansMedal?: FansMedal
-  /** 高能榜排名 */
-  giftRank?: GiftRank
-  /** 大航海类型 */
-  guardType?: GuardType
-  // 是否为房管
-  isRoomAdmin?: boolean
-}
-
-// 粉丝勋章信息
-export interface FansMedal {
-  /** 粉丝勋章名称 */
-  name: string
-  /** 粉丝勋章等级 */
-  level: number
-  /** 粉丝勋章的大航海类型 */
-  guardType: GuardType
-  /** 粉丝勋章颜色 */
-  color: {
-    /** 原始颜色 */
-    original: string
-    /** 边框色 */
-    border: string
-    /** 渐变色开始 */
-    start: string
-    /** 渐变色结束 */
-    end: string
-  }
-  /** 粉丝勋章是否点亮 */
-  isLighted: boolean
-  /** 相关主播信息 */
-  anchor: {
-    /** 主播用户Id */
-    uid: number
-    /** 主播用户名 */
-    uname: string
-    /** 主播房间号 */
-    roomId: number
-  }
-}
-
-/** 高能榜排名 */
-export enum GiftRank {
-  /** 未上榜 */
-  None,
-  /** 榜1 */
-  First,
-  /** 榜2 */
-  Second,
-  /** 榜3 */
-  Third
-}
-
-/** 大航海类型 */
-export enum GuardType {
-  /** 未上舰 */
-  None,
-  /** 总督 */
-  ZongDu,
-  /** 提督 */
-  TiDu,
-  /** 舰长 */
-  JianZhang
-}
-
-/** 互动类型 */
-export enum InteractType {
-  Enter = 1,
-  Follow,
-  Share,
-  Like
-}
-
-/** 天选时刻奖品信息 */
-export interface AnchorLotAward {
-  /** 奖品名称 */
-  name: string
-  /** 奖品数量 */
-  num: number
-  /** 奖品图片 */
-  image: string
-  /** 奖品类型 */
-  type: AnchorLotAwardType
-  /** 奖品价值描述 */
-  priceText: string
-}
-
-/** 天选时刻奖品类型 */
-export enum AnchorLotAwardType {
-  /** 实物奖品 */
-  PHYSICAL = 0,
-  /** 虚拟奖品 */
-  VIRTUAL = 1
-}
-
-/** 天选时刻参与用户要求的类型 */
-export enum AnchorLotUserType {
-  /** 无要求 */
-  None = 0,
-  /** 关注主播 */
-  Follow = 1,
-  /** 粉丝勋章 */
-  FansMedal = 2,
-  /** 大航海 */
-  Guard = 3
-}
 ```
 
 #### Data Type
 
-你可以在 [src/events](src/events) 查看所有的消息主体类型。
+你可以在 [src/events](src/events) 查看所有的消息主体类型，它将作为泛型传入回调函数的参数类型 `Message<T>` 中。
 
 比如，弹幕消息的消息主体类型为 `DanmuData`，定义如下：
 
