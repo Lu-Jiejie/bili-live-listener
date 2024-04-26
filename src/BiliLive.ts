@@ -26,6 +26,7 @@ import { type AnchorLotStartData, AnchorLotStartEvent } from './events/AnchorLot
 import { type AnchorLotEndData, AnchorLotEndEvent } from './events/AnchorLotEnd'
 import { type RedPocketStartData, RedPocketStartEvent } from './events/RedPocketStart'
 import { type RedPocketEndData, RedPocketEndEvent } from './events/RedPocketEnd'
+import { type PopularRankUpdateData, PopularRankUpdateEvent } from './events/PopularRankUpdate'
 
 const commonEvents = [
   OpenEvent,
@@ -54,7 +55,8 @@ const events = [
   AnchorLotStartEvent,
   AnchorLotEndEvent,
   RedPocketStartEvent,
-  RedPocketEndEvent
+  RedPocketEndEvent,
+  PopularRankUpdateEvent
 ]
 
 export interface BiliLiveOptions {
@@ -101,6 +103,7 @@ export default class BiliLive {
   public onAnchorLotEnd!: (callback: (message: Message<AnchorLotEndData>) => void) => RemoveHandler
   public onRedPocketStart!: (callback: (message: Message<RedPocketStartData>) => void) => RemoveHandler
   public onRedPocketEnd!: (callback: (message: Message<RedPocketEndData>) => void) => RemoveHandler
+  public onPopularRankUpdate!: (callback: (message: Message<PopularRankUpdateData>) => void) => RemoveHandler
 
   constructor(roomId: number, options: BiliLiveOptions) {
     const { key, uid, isBrowser } = options
