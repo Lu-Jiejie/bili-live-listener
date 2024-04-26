@@ -7,7 +7,7 @@ export interface GuardBuyData {
   user: User
   /** 大航海类型 */
   guardType: GuardType
-  /** 价格 单位：1/1000元 */
+  /** 价格；单位：1金瓜子=1/1000元=1/100电池 */
   price: number
   /** 数量 */
   num: number

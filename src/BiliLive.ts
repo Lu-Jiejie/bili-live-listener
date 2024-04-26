@@ -24,6 +24,8 @@ import { type EntryEffectData, EntryEffectEvent } from './events/EntryEffect'
 import { type RoomChangeData, RoomChangeEvent } from './events/RoomChange'
 import { type AnchorLotStartData, AnchorLotStartEvent } from './events/AnchorLotStart'
 import { type AnchorLotEndData, AnchorLotEndEvent } from './events/AnchorLotEnd'
+import { type RedPocketStartData, RedPocketStartEvent } from './events/RedPocketStart'
+import { type RedPocketEndData, RedPocketEndEvent } from './events/RedPocketEnd'
 
 const commonEvents = [
   OpenEvent,
@@ -50,7 +52,9 @@ const events = [
   EntryEffectEvent,
   RoomChangeEvent,
   AnchorLotStartEvent,
-  AnchorLotEndEvent
+  AnchorLotEndEvent,
+  RedPocketStartEvent,
+  RedPocketEndEvent
 ]
 
 export interface BiliLiveOptions {
@@ -95,6 +99,8 @@ export default class BiliLive {
   public onRoomChange!: (callback: (message: Message<RoomChangeData>) => void) => RemoveHandler
   public onAnchorLotStart!: (callback: (message: Message<AnchorLotStartData>) => void) => RemoveHandler
   public onAnchorLotEnd!: (callback: (message: Message<AnchorLotEndData>) => void) => RemoveHandler
+  public onRedPocketStart!: (callback: (message: Message<RedPocketStartData>) => void) => RemoveHandler
+  public onRedPocketEnd!: (callback: (message: Message<RedPocketEndData>) => void) => RemoveHandler
 
   constructor(roomId: number, options: BiliLiveOptions) {
     const { key, uid, isBrowser } = options

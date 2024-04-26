@@ -8,7 +8,7 @@ export interface AnchorLotEndData {
   /** 奖品 */
   award: AnchorLotAward
   /** 中奖用户信息 */
-  users: {
+  winners: {
     /** 用户Id */
     uid: number
     /** 用户名 */
@@ -33,7 +33,7 @@ function dataProcessor(rawData: any): Message<AnchorLotEndData> {
       image: data.award_image,
       priceText: data.award_price_text
     },
-    users: data.award_users.map((user: any) => ({
+    winners: data.award_users.map((user: any) => ({
       uid: user.uid,
       uname: user.uname,
       face: user.face,

@@ -1,0 +1,32 @@
+{
+  "cmd": "POPULARITY_RED_POCKET_NEW",
+  "data": {
+      "lot_id": 8445764,
+      "start_time": 1673684631,
+      "current_time": 1673684631,
+      "wait_num": 0,
+      "uname": "我的0019",
+      "uid": 38554435,
+      "action": "送出",
+      "num": 1,
+      "gift_name": "红包",
+      "gift_id": 13000,
+      "price": 20,// 单位：1电池=100金瓜子=1/10元
+      "name_color": "",
+      "medal_info": {
+          "target_id": 400963649,
+          "special": "",
+          "icon_id": 0,
+          "anchor_uname": "",
+          "anchor_roomid": 0,
+          "medal_level": 21,
+          "medal_name": "憨憨酥",
+          "medal_color": 1725515,
+          "medal_color_start": 12632256,
+          "medal_color_end": 12632256,
+          "medal_color_border": 12632256,
+          "is_lighted": 0,
+          "guard_level": 0
+      }
+  }
+}

@@ -124,3 +124,6 @@ export enum AnchorLotUserType {
   /** 大航海 */
   Guard = 3
 }
+
+/** 礼物瓜子类型；1金瓜子=1/1000元=1/100电池；银瓜子无金钱价值 */
+export type CoinType = 'silver' | 'gold'
