@@ -117,13 +117,24 @@ export default class BiliLive {
   }
 
   private initEvents() {
-    [...commonEvents, ...events].forEach((event) => {
-      const { cmdName: _cmdName, handlerName, dataProcessor } = event
-      const cmdNames = Array.isArray(_cmdName) ? _cmdName : [_cmdName]
+    [...commonEvents.map(item => ({ ...item, dataProcessor: undefined })), ...events].forEach((event) => {
+      const { cmdName, handlerName, dataProcessor } = event
+      const cmdNames = Array.isArray(cmdName) ? cmdName : [cmdName]
       cmdNames.forEach((cmdName) => {
         this.live.on(cmdName, (data) => {
-          if (this.handlers[handlerName])
-            this.handlers[handlerName].forEach(({ callback }) => callback(dataProcessor(data)))
+          if (this.handlers[handlerName]) {
+            this.handlers[handlerName].forEach(({ callback }) => {
+              if (!dataProcessor) {
+                callback(data)
+              }
+              else {
+                const message = dataProcessor(data)
+                // no message means the data is not should be processed and returned
+                if (message)
+                  callback(message)
+              }
+            })
+          }
         })
       })
       // eslint-disable-next-line ts/ban-ts-comment

@@ -9,5 +9,4 @@ export interface EventInfo<T> {
 export interface CommonEventInfo {
   cmdName: string
   handlerName: string
-  dataProcessor: (data: any) => any
 }
