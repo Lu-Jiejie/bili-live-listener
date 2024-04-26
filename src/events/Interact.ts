@@ -8,6 +8,8 @@ export interface InteractData {
   type: InteractType
   /** 用户信息 */
   user: User
+  /** 时间戳 */
+  timestamp: number
 }
 
 function dataProcessorInteract(rawData: any): Message<InteractData> {
@@ -39,7 +41,8 @@ function dataProcessorInteract(rawData: any): Message<InteractData> {
           }
         : undefined,
       guardType: data.uinfo.guard.level
-    }
+    },
+    timestamp: data.timestamp
   }
   return normalizeMessage(rawData.cmd, newData, rawData)
 }
@@ -73,7 +76,8 @@ function dataProcessorLike(rawData: any): Message<InteractData> {
           }
         : undefined,
       guardType: data.uinfo.guard.level
-    }
+    },
+    timestamp: Date.now() // 点赞没有时间戳，使用当前时间
   }
   return normalizeMessage(rawData.cmd, newData, rawData)
 }

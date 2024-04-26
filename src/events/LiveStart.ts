@@ -5,8 +5,8 @@ import { normalizeMessage } from '../utils/message'
 export interface LiveStartData {
   /** 开播平台 */
   platform: string
-  /** 开播时间 */
-  startTime: number
+  /** 开播时间戳 */
+  timestamp: number
   /** 房间Id */
   roomId: number
 }
@@ -14,7 +14,7 @@ export interface LiveStartData {
 function dataProcessor(rawData: any): Message<LiveStartData> {
   const newData: LiveStartData = {
     platform: rawData.live_platform,
-    startTime: rawData.live_time,
+    timestamp: rawData.live_time,
     roomId: rawData.roomid
   }
   return normalizeMessage(rawData.cmd, newData, rawData)

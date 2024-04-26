@@ -42,7 +42,7 @@ function dataProcessor(rawData: any): Message<RedPocketEndData> {
       giftId: winner[3]
     })),
     awards: Object.entries(data.awards).map(([giftId, giftInfo]: [string, any]) => ({
-      giftId: Number(giftId),
+      giftId: Number.parseInt(giftId),
       giftName: giftInfo.award_name,
       price: giftInfo.award_price,
       giftPic: giftInfo.award_pic,

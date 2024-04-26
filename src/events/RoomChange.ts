@@ -13,6 +13,8 @@ export interface RoomChangeData {
   areaId: number
   /** 二级分区名称 */
   areaName: string
+  /** 时间戳 */
+  timestamp: number
 }
 
 function dataProcessor(rawData: any): Message<RoomChangeData> {
@@ -22,7 +24,8 @@ function dataProcessor(rawData: any): Message<RoomChangeData> {
     parentAreaId: data.parent_area_id,
     parentAreaName: data.parent_area_name,
     areaId: data.area_id,
-    areaName: data.area_name
+    areaName: data.area_name,
+    timestamp: Number.parseInt(data.sub_session_key.split(':')[1])
   }
   return normalizeMessage(rawData.cmd, newData, rawData)
 }

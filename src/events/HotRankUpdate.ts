@@ -9,6 +9,8 @@ export interface HotRankUpdateData {
   description: string
   /** 分区热门排名 */
   rank: number
+  /** 结榜倒计时 */
+  countdown: number
 }
 
 function dataProcessor(rawData: any): Message<HotRankUpdateData> {
@@ -16,7 +18,8 @@ function dataProcessor(rawData: any): Message<HotRankUpdateData> {
   const newData: HotRankUpdateData = {
     areaName: data.area_name,
     description: data.rank_desc,
-    rank: data.rank
+    rank: data.rank,
+    countdown: data.countdown
   }
   return normalizeMessage(rawData.cmd, newData, rawData)
 }

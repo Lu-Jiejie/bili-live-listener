@@ -7,6 +7,8 @@ export interface EntryEffectData {
   user: User
   /** 入场特效文本内容 */
   content: string
+  /** 时间戳 */
+  timestamp: number
 }
 
 function dataProcessor(rawData: any): Message<EntryEffectData> {
@@ -38,7 +40,8 @@ function dataProcessor(rawData: any): Message<EntryEffectData> {
         : undefined,
       guardType: data.uinfo.guard.level
     },
-    content: data.copy_writting
+    content: data.copy_writting,
+    timestamp: Math.round(data.trigger_time / 1000)
   }
   return normalizeMessage(rawData.cmd, newData, rawData)
 }

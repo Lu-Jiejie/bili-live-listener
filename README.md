@@ -176,7 +176,7 @@ biliLive.onRawMessage('DANMU_MSG',(message) => {
 export interface Message<T> {
   /** 消息原生类型 */
   cmd: string
-  /** 收到消息的时间戳 */
+  /** 收到消息的时间戳，由 Date.now() 生成 */
   timestamp: number
   /** 类型化后的消息主体 */
   data: T
@@ -185,9 +185,13 @@ export interface Message<T> {
 }
 ```
 
+> [!TIP]
+> 大部分消息主体 `data` 中都会包含 `timestamp` 字段，表示消息到达的更精确的秒时间戳，建议使用这个字段。
+> 而 `Message<T>` 中的 `timestamp` 字段，是由 `Date.now()` 生成的时间戳，也许会有一定的误差。
+
 #### Data Type
 
-你可以在 [src/events](src/events) 查看所有的消息主体类型，它将作为泛型传入回调函数的参数类型 `Message<T>` 中。
+你可以在 [src/events](src/events) 查看所有的消息主体类型，它将作为泛型传入回调函数的参数类型 `Message<T>` 中。其中部分类型在 [src/types/message.ts](src/types/message.ts) 中定义。
 
 比如，弹幕消息的消息主体类型为 `DanmuData`，定义如下：
 

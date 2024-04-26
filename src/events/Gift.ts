@@ -27,6 +27,8 @@ export interface GiftData {
     /** 连击总价；单位：1金瓜子=1/1000元=1/100电池 */
     totalPrice: number
   }
+  /** 时间戳 */
+  timestamp: number
 }
 
 function dataProcessorGift(rawData: any): Message<GiftData> {
@@ -69,7 +71,8 @@ function dataProcessorGift(rawData: any): Message<GiftData> {
           num: data.batch_combo_num,
           totalPrice: data.combo_total_coin
         }
-      : undefined
+      : undefined,
+    timestamp: data.timestamp
   }
   return normalizeMessage(rawData.cmd, newData, rawData)
 }
@@ -114,7 +117,8 @@ function dataProcessorRedPocket(rawData: any): Message<GiftData> {
           num: data.batch_combo_num,
           totalPrice: data.combo_total_coin
         }
-      : undefined
+      : undefined,
+    timestamp: data.current_time
   }
   return normalizeMessage(rawData.cmd, newData, rawData)
 }

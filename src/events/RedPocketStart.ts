@@ -26,7 +26,9 @@ export interface RedPocketStartData {
     uname: string
     face: string
   }
-  /** 红包开始抽奖时间 */
+  /** 时间戳 */
+  timestamp: number
+  /** 红包可以开始抽奖的时间戳 */
   startTime: number
   /** 红包抽奖持续时间，单位：秒 */
   duration: number
@@ -51,6 +53,7 @@ function dataProcessor(rawData: any): Message<RedPocketStartData> {
       uname: data.sender_name,
       face: data.sender_face
     },
+    timestamp: data.current_time,
     startTime: data.start_time,
     duration: data.last_time,
     waitNum: data.wait_num
