@@ -11,6 +11,8 @@ export interface HotRankUpdateData {
   rank: number
   /** 结榜倒计时 */
   countdown: number
+  /** 时间戳 */
+  timestamp: number
 }
 
 function dataProcessor(rawData: any): Message<HotRankUpdateData> {
@@ -19,7 +21,8 @@ function dataProcessor(rawData: any): Message<HotRankUpdateData> {
     areaName: data.area_name,
     description: data.rank_desc,
     rank: data.rank,
-    countdown: data.countdown
+    countdown: data.countdown,
+    timestamp: data.timestamp
   }
   return normalizeMessage(rawData.cmd, newData, rawData)
 }
