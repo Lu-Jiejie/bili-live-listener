@@ -1,0 +1,70 @@
+{
+  "cmd": "DM_INTERACTION",
+  "data": {
+    "data": "{\"combo\":[{\"id\":30125982785536,\"status\":4,\"content\":\"？\",\"cnt\":11,\"guide\":\"他们都在说:\",\"left_duration\":10000,\"fade_duration\":10000,\"prefix_icon\":\"\"},{\"id\":30125997491200,\"status\":4,\"content\":\"哈 哈哈\",\"cnt\":6,\"guide\":\"他们都在说:\",\"left_duration\":12000,\"fade_duration\":10000,\"prefix_icon\":\"\"},{\"id\":30126003773952,\"status\":4,\"content\":\"哈哈哈哈哈\",\"cnt\":5,\"guide\":\"他们都在说:\",\"left_duration\":11000,\"fade_duration\":10000,\"prefix_icon\":\"\"},{\"id\":30126003736576,\"status\":4,\"content\":\"哈哈哈哈\",\"cnt\":4,\"guide\":\"他们都在说:\",\"left_duration\":5000,\"fade_duration\":10000,\"prefix_icon\":\"\"},{\"id\":30126005846528,\"status\":4,\"content\":\"哈哈\",\"cnt\":3,\"guide\":\"他们都在说:\",\"left_duration\":0,\"fade_duration\":10000,\"prefix_icon\":\"\"}],\"merge_interval\":1000,\"card_appear_interval\":1000,\"send_interval\":1000}",
+    "dmscore": 36,
+    "id": 30125982785536,
+    "status": 4,
+    "type": 102
+  }
+}
+
+/**
+{
+  "card_appear_interval": 1000,
+  "combo": [
+    {
+      "cnt": 11,
+      "content": "？",
+      "fade_duration": 10000,
+      "guide": "他们都在说:",
+      "id": 30125982785536,
+      "left_duration": 10000,
+      "prefix_icon": "",
+      "status": 4,
+    },
+    {
+      "cnt": 6,
+      "content": "哈 哈哈",
+      "fade_duration": 10000,
+      "guide": "他们都在说:",
+      "id": 30125997491200,
+      "left_duration": 12000,
+      "prefix_icon": "",
+      "status": 4,
+    },
+    {
+      "cnt": 5,
+      "content": "哈哈哈哈哈",
+      "fade_duration": 10000,
+      "guide": "他们都在说:",
+      "id": 30126003773952,
+      "left_duration": 11000,
+      "prefix_icon": "",
+      "status": 4,
+    },
+    {
+      "cnt": 4,
+      "content": "哈哈哈哈",
+      "fade_duration": 10000,
+      "guide": "他们都在说:",
+      "id": 30126003736576,
+      "left_duration": 5000,
+      "prefix_icon": "",
+      "status": 4,
+    },
+    {
+      "cnt": 3,
+      "content": "哈哈",
+      "fade_duration": 10000,
+      "guide": "他们都在说:",
+      "id": 30126005846528,
+      "left_duration": 0,
+      "prefix_icon": "",
+      "status": 4,
+    },
+  ],
+  "merge_interval": 1000,
+  "send_interval": 1000,
+}
+*/

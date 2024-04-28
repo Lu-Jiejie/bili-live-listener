@@ -27,6 +27,7 @@ import { type AnchorLotEndData, AnchorLotEndEvent } from './events/AnchorLotEnd'
 import { type RedPocketStartData, RedPocketStartEvent } from './events/RedPocketStart'
 import { type RedPocketEndData, RedPocketEndEvent } from './events/RedPocketEnd'
 import { type PopularRankUpdateData, PopularRankUpdateEvent } from './events/PopularRankUpdate'
+import { type DanmuInteractData, DanmuInteractEvent } from './events/DanmuInteract'
 
 const commonEvents = [
   OpenEvent,
@@ -56,7 +57,8 @@ const events = [
   AnchorLotEndEvent,
   RedPocketStartEvent,
   RedPocketEndEvent,
-  PopularRankUpdateEvent
+  PopularRankUpdateEvent,
+  DanmuInteractEvent
 ]
 
 export interface BiliLiveOptions {
@@ -104,6 +106,7 @@ export default class BiliLive {
   public onRedPocketStart!: (callback: (message: Message<RedPocketStartData>) => void) => RemoveHandler
   public onRedPocketEnd!: (callback: (message: Message<RedPocketEndData>) => void) => RemoveHandler
   public onPopularRankUpdate!: (callback: (message: Message<PopularRankUpdateData>) => void) => RemoveHandler
+  public onDanmuInteract!: (callback: (message: Message<DanmuInteractData>) => void) => RemoveHandler
 
   constructor(roomId: number, options: BiliLiveOptions) {
     const { key, uid, isBrowser } = options

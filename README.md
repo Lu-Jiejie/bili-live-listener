@@ -164,6 +164,8 @@ biliLive.onRawMessage('DANMU_MSG',(message) => {
 | onAnchorLotEnd | [AnchorLotEndData](src/events/AnchorLotEnd.ts) | 天选时刻结束                     |
 | onRedPocketStart | [RedPocketStartData](src/events/RedPocketStart.ts) | 红包抽奖开始                     |
 | onRedPocketEnd | [RedPocketEndData](src/events/RedPocketEnd.ts) | 红包抽奖结束                     |
+| onPopularRankUpdate | [PopularRankUpdateData](src/events/PopularRankUpdate.ts) | 当前直播间的热门排名变动                     |
+| onDanmuInteract | [DanmuInteractData](src/events/DanmuInteract.ts) | 弹幕互动（弹幕投票信息、“他们都在说”类的弹幕连击）                      |
 
 值得注意的是，这些 `Message Methods` 都会返回一个移除监听器的函数，你可以调用这个函数来移除监听器，参考 [这里](#example)
 
