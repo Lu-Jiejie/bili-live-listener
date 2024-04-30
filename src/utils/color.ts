@@ -11,7 +11,7 @@ export function colorHex2Rgb(hex: string) {
   return {
     r: int >> 16 & 0xFF,
     g: int >> 8 & 0xFF,
-    b: int & 0xFF
+    b: int & 0xFF,
   }
 }
 

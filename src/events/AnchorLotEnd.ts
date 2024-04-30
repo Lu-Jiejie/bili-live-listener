@@ -31,15 +31,15 @@ function dataProcessor(rawData: any): Message<AnchorLotEndData> {
       num: data.award_num,
       type: data.award_type,
       image: data.award_image,
-      priceText: data.award_price_text
+      priceText: data.award_price_text,
     },
     winners: data.award_users.map((user: any) => ({
       uid: user.uid,
       uname: user.uname,
       face: user.face,
       level: user.level,
-      num: user.num
-    }))
+      num: user.num,
+    })),
   }
   return normalizeMessage(rawData.cmd, newData, rawData)
 }
@@ -47,5 +47,5 @@ function dataProcessor(rawData: any): Message<AnchorLotEndData> {
 export const AnchorLotEndEvent: EventInfo<AnchorLotEndData> = {
   cmdName: 'ANCHOR_LOT_AWARD',
   handlerName: 'onAnchorLotEnd',
-  dataProcessor
+  dataProcessor,
 }

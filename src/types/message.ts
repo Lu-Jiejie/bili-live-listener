@@ -68,7 +68,7 @@ export enum GiftRank {
   /** 榜2 */
   Second,
   /** 榜3 */
-  Third
+  Third,
 }
 
 /** 大航海类型 */
@@ -80,7 +80,7 @@ export enum GuardType {
   /** 提督 */
   TiDu,
   /** 舰长 */
-  JianZhang
+  JianZhang,
 }
 
 /** 互动类型 */
@@ -88,7 +88,7 @@ export enum InteractType {
   Enter = 1,
   Follow,
   Share,
-  Like
+  Like,
 }
 
 /** 天选时刻奖品信息 */
@@ -110,7 +110,7 @@ export enum AnchorLotAwardType {
   /** 实物奖品 */
   PHYSICAL = 0,
   /** 虚拟奖品 */
-  VIRTUAL = 1
+  VIRTUAL = 1,
 }
 
 /** 天选时刻参与用户要求的类型 */
@@ -122,7 +122,7 @@ export enum AnchorLotUserType {
   /** 粉丝勋章 */
   FansMedal = 2,
   /** 大航海 */
-  Guard = 3
+  Guard = 3,
 }
 
 /** 礼物瓜子类型；1金瓜子=1/1000元=1/100电池；银瓜子无金钱价值 */

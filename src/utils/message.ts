@@ -5,6 +5,6 @@ export function normalizeMessage<T>(cmd: string, data: T, rawData: any): Message
     cmd,
     timestamp: Date.now(),
     data,
-    raw: rawData
+    raw: rawData,
   }
 }

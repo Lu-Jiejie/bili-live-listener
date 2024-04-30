@@ -48,16 +48,16 @@ function dataProcessorGift(rawData: any): Message<GiftData> {
               original: medal_info.medal_color,
               border: medal_info.medal_color_border,
               start: medal_info.medal_color_start,
-              end: medal_info.medal_color_end
+              end: medal_info.medal_color_end,
             },
             isLighted: medal_info.is_lighted,
             anchor: {
               uid: medal_info.target_id,
               uname: medal_info.anchor_uname, // ""
-              roomId: medal_info.anchor_roomid // 0
-            }
+              roomId: medal_info.anchor_roomid, // 0
+            },
           }
-        : undefined
+        : undefined,
     },
     giftId: data.giftId,
     giftName: data.giftName,
@@ -69,10 +69,10 @@ function dataProcessorGift(rawData: any): Message<GiftData> {
       ? {
           id: data.batch_combo_id,
           num: data.batch_combo_num,
-          totalPrice: data.combo_total_coin
+          totalPrice: data.combo_total_coin,
         }
       : undefined,
-    timestamp: data.timestamp
+    timestamp: data.timestamp,
   }
   return normalizeMessage(rawData.cmd, newData, rawData)
 }
@@ -94,16 +94,16 @@ function dataProcessorRedPocket(rawData: any): Message<GiftData> {
               original: medal_info.medal_color,
               border: medal_info.medal_color_border,
               start: medal_info.medal_color_start,
-              end: medal_info.medal_color_end
+              end: medal_info.medal_color_end,
             },
             isLighted: medal_info.is_lighted,
             anchor: {
               uid: medal_info.target_id,
               uname: medal_info.anchor_uname, // ""
-              roomId: medal_info.anchor_roomid // 0
-            }
+              roomId: medal_info.anchor_roomid, // 0
+            },
           }
-        : undefined
+        : undefined,
     },
     giftId: data.gift_id,
     giftName: data.gift_name,
@@ -115,10 +115,10 @@ function dataProcessorRedPocket(rawData: any): Message<GiftData> {
       ? {
           id: data.batch_combo_id,
           num: data.batch_combo_num,
-          totalPrice: data.combo_total_coin
+          totalPrice: data.combo_total_coin,
         }
       : undefined,
-    timestamp: data.current_time
+    timestamp: data.current_time,
   }
   return normalizeMessage(rawData.cmd, newData, rawData)
 }
@@ -135,5 +135,5 @@ function dataProcessor(rawData: any): Message<GiftData> {
 export const GiftEvent: EventInfo<GiftData> = {
   cmdName: ['SEND_GIFT', 'POPULARITY_RED_POCKET_NEW'],
   handlerName: 'onGift',
-  dataProcessor
+  dataProcessor,
 }

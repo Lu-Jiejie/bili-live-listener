@@ -16,7 +16,7 @@ function dataProcessor(rawData: any): Message<WatchedChangeData> {
   const newData: WatchedChangeData = {
     num: data.num,
     textSmall: data.text_small,
-    textLarge: data.text_large
+    textLarge: data.text_large,
   }
   return normalizeMessage(rawData.cmd, newData, rawData)
 }
@@ -24,5 +24,5 @@ function dataProcessor(rawData: any): Message<WatchedChangeData> {
 export const WatchedChangeEvent: EventInfo<WatchedChangeData> = {
   cmdName: 'WATCHED_CHANGE',
   handlerName: 'onWatchedChange',
-  dataProcessor
+  dataProcessor,
 }

@@ -39,15 +39,15 @@ function dataProcessor(rawData: any): Message<RedPocketEndData> {
     winners: data.winner_info.map((winner: any) => ({
       uid: winner[0],
       uname: winner[1],
-      giftId: winner[3]
+      giftId: winner[3],
     })),
     awards: Object.entries(data.awards).map(([giftId, giftInfo]: [string, any]) => ({
       giftId: Number.parseInt(giftId),
       giftName: giftInfo.award_name,
       price: giftInfo.award_price,
       giftPic: giftInfo.award_pic,
-      giftBigPic: giftInfo.award_big_pic
-    }))
+      giftBigPic: giftInfo.award_big_pic,
+    })),
   }
   return normalizeMessage(rawData.cmd, newData, rawData)
 }
@@ -55,5 +55,5 @@ function dataProcessor(rawData: any): Message<RedPocketEndData> {
 export const RedPocketEndEvent: EventInfo<RedPocketEndData> = {
   cmdName: 'POPULARITY_RED_POCKET_WINNER_LIST',
   handlerName: 'onRedPocketEnd',
-  dataProcessor
+  dataProcessor,
 }

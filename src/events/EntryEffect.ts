@@ -28,20 +28,20 @@ function dataProcessor(rawData: any): Message<EntryEffectData> {
               original: medal.color,
               border: medal.color_border,
               start: medal.color_start,
-              end: medal.color_end
+              end: medal.color_end,
             },
             isLighted: medal.is_light,
             anchor: {
               uid: medal.ruid,
               uname: '',
-              roomId: 0
-            }
+              roomId: 0,
+            },
           }
         : undefined,
-      guardType: data.uinfo.guard.level
+      guardType: data.uinfo.guard.level,
     },
     content: data.copy_writting,
-    timestamp: Math.round(data.trigger_time / 1000)
+    timestamp: Math.round(data.trigger_time / 1000),
   }
   return normalizeMessage(rawData.cmd, newData, rawData)
 }
@@ -49,5 +49,5 @@ function dataProcessor(rawData: any): Message<EntryEffectData> {
 export const EntryEffectEvent: EventInfo<EntryEffectData> = {
   cmdName: 'ENTRY_EFFECT',
   handlerName: 'onEntryEffect',
-  dataProcessor
+  dataProcessor,
 }

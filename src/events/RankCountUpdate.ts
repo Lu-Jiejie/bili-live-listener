@@ -12,7 +12,7 @@ export interface RankCountUpdateData {
 function dataProcessor(rawData: any): Message<RankCountUpdateData> {
   const { data } = rawData
   const newData: RankCountUpdateData = {
-    count: data.count
+    count: data.count,
   }
   return normalizeMessage(rawData.cmd, newData, rawData)
 }
@@ -20,5 +20,5 @@ function dataProcessor(rawData: any): Message<RankCountUpdateData> {
 export const RankCountUpdateEvent: EventInfo<RankCountUpdateData> = {
   cmdName: 'ONLINE_RANK_COUNT',
   handlerName: 'onRankCountUpdate',
-  dataProcessor
+  dataProcessor,
 }

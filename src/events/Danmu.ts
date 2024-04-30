@@ -36,19 +36,19 @@ function dataProcessor(rawData: any): Message<DanmuData> {
               original: int2ColorHex(info[3][4]),
               border: int2ColorHex(info[3][7]),
               start: int2ColorHex(info[3][8]),
-              end: int2ColorHex(info[3][9])
+              end: int2ColorHex(info[3][9]),
             },
             isLighted: info[3][11],
             anchor: {
               uid: info[3][12],
               uname: info[3][2],
-              roomId: info[3][3]
-            }
+              roomId: info[3][3],
+            },
           }
         : undefined,
       giftRank: info[4][4],
       guardType: info[7],
-      isRoomAdmin: info[2][2] === 1
+      isRoomAdmin: info[2][2] === 1,
     },
     content: info[1],
     timestamp: info[0][4],
@@ -56,9 +56,9 @@ function dataProcessor(rawData: any): Message<DanmuData> {
     emoticon: info[0][13]?.emoticon_unique
       ? {
           id: info[0][13].emoticon_unique.id,
-          url: info[0][13].url
+          url: info[0][13].url,
         }
-      : undefined
+      : undefined,
   }
 
   return normalizeMessage(rawData.cmd, newData, rawData)
@@ -67,5 +67,5 @@ function dataProcessor(rawData: any): Message<DanmuData> {
 export const DanmuEvent: EventInfo<DanmuData> = {
   cmdName: 'DANMU_MSG',
   handlerName: 'onDanmu',
-  dataProcessor
+  dataProcessor,
 }

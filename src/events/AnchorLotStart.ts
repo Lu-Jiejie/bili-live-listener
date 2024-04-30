@@ -44,7 +44,7 @@ function dataProcessor(rawData: any): Message<AnchorLotStartData> {
       num: data.award_num,
       type: data.award_type,
       image: data.award_image,
-      priceText: data.award_price_text
+      priceText: data.award_price_text,
     },
     danmu: data.danmu,
     gift: data.gift_id
@@ -52,16 +52,16 @@ function dataProcessor(rawData: any): Message<AnchorLotStartData> {
           id: data.gift_id,
           name: data.gift_name,
           num: data.gift_num,
-          price: data.gift_price
+          price: data.gift_price,
         }
       : undefined,
     require: {
       text: data.require_text,
       userType: data.require_type,
-      value: data.require_value
+      value: data.require_value,
     },
     startTime: data.current_time,
-    duration: data.max_time
+    duration: data.max_time,
   }
   return normalizeMessage(rawData.cmd, newData, rawData)
 }
@@ -69,5 +69,5 @@ function dataProcessor(rawData: any): Message<AnchorLotStartData> {
 export const AnchorLotStartEvent: EventInfo<AnchorLotStartData> = {
   cmdName: 'ANCHOR_LOT_START',
   handlerName: 'onAnchorLotStart',
-  dataProcessor
+  dataProcessor,
 }

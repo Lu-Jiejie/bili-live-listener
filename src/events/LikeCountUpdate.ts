@@ -9,7 +9,7 @@ export interface LikeCountUpdateData {
 function dataProcessor(rawData: any): Message<LikeCountUpdateData> {
   const { data } = rawData
   const newData: LikeCountUpdateData = {
-    num: data.click_count
+    num: data.click_count,
   }
   return normalizeMessage(rawData.cmd, newData, rawData)
 }
@@ -17,5 +17,5 @@ function dataProcessor(rawData: any): Message<LikeCountUpdateData> {
 export const LikeCountUpdateEvent: EventInfo<LikeCountUpdateData> = {
   cmdName: 'LIKE_INFO_V3_UPDATE',
   handlerName: 'onLikeCountUpdate',
-  dataProcessor
+  dataProcessor,
 }

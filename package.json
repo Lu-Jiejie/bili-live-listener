@@ -50,6 +50,9 @@
     "prepublishOnly": "nr build",
     "prepare": "simple-git-hooks"
   },
+  "dependencies": {
+    "bilibili-live-ws": "^6.3.1"
+  },
   "devDependencies": {
     "@antfu/eslint-config": "^2.8.2",
     "@types/node": "^20.11.27",
@@ -67,8 +70,5 @@
   },
   "lint-staged": {
     "*": "eslint --fix"
-  },
-  "dependencies": {
-    "bilibili-live-ws": "^6.3.1"
   }
 }

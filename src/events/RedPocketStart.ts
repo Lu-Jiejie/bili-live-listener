@@ -44,19 +44,19 @@ function dataProcessor(rawData: any): Message<RedPocketStartData> {
       giftId: award.gift_id,
       giftName: award.gift_name,
       num: award.num,
-      giftPic: award.gift_pic
+      giftPic: award.gift_pic,
     })),
     totalPrice: data.total_price,
     danmu: data.danmu,
     sender: {
       uid: data.sender_uid,
       uname: data.sender_name,
-      face: data.sender_face
+      face: data.sender_face,
     },
     timestamp: data.current_time,
     startTime: data.start_time,
     duration: data.last_time,
-    waitNum: data.wait_num
+    waitNum: data.wait_num,
   }
   return normalizeMessage(rawData.cmd, newData, rawData)
 }
@@ -64,5 +64,5 @@ function dataProcessor(rawData: any): Message<RedPocketStartData> {
 export const RedPocketStartEvent: EventInfo<RedPocketStartData> = {
   cmdName: 'POPULARITY_RED_POCKET_START',
   handlerName: 'onRedPocketStart',
-  dataProcessor
+  dataProcessor,
 }

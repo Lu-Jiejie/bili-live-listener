@@ -27,7 +27,7 @@ function dataProcessor(rawData: any): Message<NoticeData> {
     longRoomId: rawData.real_roomid,
     url: rawData.link_url || undefined,
     messageCommon: rawData.msg_common || undefined,
-    messageSelf: rawData.msg_self
+    messageSelf: rawData.msg_self,
   }
   return normalizeMessage(rawData.cmd, newData, rawData)
 }
@@ -35,5 +35,5 @@ function dataProcessor(rawData: any): Message<NoticeData> {
 export const NoticeEvent: EventInfo<NoticeData> = {
   cmdName: 'NOTICE_MSG',
   handlerName: 'onNotice',
-  dataProcessor
+  dataProcessor,
 }

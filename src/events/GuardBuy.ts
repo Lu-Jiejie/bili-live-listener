@@ -26,7 +26,7 @@ function dataProcessor(rawData: any): Message<GuardBuyData> {
   const newData: GuardBuyData = {
     user: {
       uid: data.uid,
-      uname: data.username
+      uname: data.username,
     },
     guardType: data.guard_level,
     price: data.price,
@@ -34,7 +34,7 @@ function dataProcessor(rawData: any): Message<GuardBuyData> {
     giftName: data.gift_name,
     giftId: data.gift_id,
     startTime: data.start_time,
-    endTime: data.end_time
+    endTime: data.end_time,
   }
   return normalizeMessage(rawData.cmd, newData, rawData)
 }
@@ -42,5 +42,5 @@ function dataProcessor(rawData: any): Message<GuardBuyData> {
 export const GuardBuyEvent: EventInfo<GuardBuyData> = {
   cmdName: 'GUARD_BUY',
   handlerName: 'onGuardBuy',
-  dataProcessor
+  dataProcessor,
 }

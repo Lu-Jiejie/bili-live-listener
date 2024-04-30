@@ -30,19 +30,19 @@ function dataProcessorInteract(rawData: any): Message<InteractData> {
               original: fans_medal.medal_color,
               border: fans_medal.medal_color_border,
               start: fans_medal.medal_color_start,
-              end: fans_medal.medal_color_end
+              end: fans_medal.medal_color_end,
             },
             isLighted: !!fans_medal.is_lighted,
             anchor: {
               uid: fans_medal.target_id,
               uname: '',
-              roomId: fans_medal.anchor_roomid
-            }
+              roomId: fans_medal.anchor_roomid,
+            },
           }
         : undefined,
-      guardType: data.uinfo.guard.level
+      guardType: data.uinfo.guard.level,
     },
-    timestamp: data.timestamp
+    timestamp: data.timestamp,
   }
   return normalizeMessage(rawData.cmd, newData, rawData)
 }
@@ -65,19 +65,19 @@ function dataProcessorLike(rawData: any): Message<InteractData> {
               original: fans_medal.medal_color,
               border: fans_medal.medal_color_border,
               start: fans_medal.medal_color_start,
-              end: fans_medal.medal_color_end
+              end: fans_medal.medal_color_end,
             },
             isLighted: !!fans_medal.is_lighted,
             anchor: {
               uid: fans_medal.target_id,
               uname: '',
-              roomId: fans_medal.anchor_roomid
-            }
+              roomId: fans_medal.anchor_roomid,
+            },
           }
         : undefined,
-      guardType: data.uinfo.guard.level
+      guardType: data.uinfo.guard.level,
     },
-    timestamp: Date.now() // 点赞没有时间戳，使用当前时间
+    timestamp: Date.now(), // 点赞没有时间戳，使用当前时间
   }
   return normalizeMessage(rawData.cmd, newData, rawData)
 }
@@ -94,5 +94,5 @@ function dataProcessor(rawData: any): Message<InteractData> {
 export const InteractEvent: EventInfo<InteractData> = {
   cmdName: ['INTERACT_WORD', 'LIKE_INFO_V3_CLICK'],
   handlerName: 'onInteract',
-  dataProcessor
+  dataProcessor,
 }

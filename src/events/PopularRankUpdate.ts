@@ -19,7 +19,7 @@ function dataProcessor(rawData: any): Message<PopularRankUpdateData> {
     uid: data.uid,
     rank: data.rank,
     countdown: data.countdown,
-    timestamp: data.timestamp
+    timestamp: data.timestamp,
   }
   return normalizeMessage(rawData.cmd, newData, rawData)
 }
@@ -27,5 +27,5 @@ function dataProcessor(rawData: any): Message<PopularRankUpdateData> {
 export const PopularRankUpdateEvent: EventInfo<PopularRankUpdateData> = {
   cmdName: 'PopularRankUpdate',
   handlerName: 'onPopularRankUpdate',
-  dataProcessor
+  dataProcessor,
 }

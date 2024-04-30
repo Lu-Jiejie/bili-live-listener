@@ -8,7 +8,7 @@ export interface LiveEndData {
 
 function dataProcessor(rawData: any): Message<LiveEndData> {
   const newData: LiveEndData = {
-    roomId: rawData.roomid
+    roomId: rawData.roomid,
   }
   return normalizeMessage(rawData.cmd, newData, rawData)
 }
@@ -16,5 +16,5 @@ function dataProcessor(rawData: any): Message<LiveEndData> {
 export const LiveEndEvent: EventInfo<LiveEndData> = {
   cmdName: 'PREPARING',
   handlerName: 'onLiveEnd',
-  dataProcessor
+  dataProcessor,
 }

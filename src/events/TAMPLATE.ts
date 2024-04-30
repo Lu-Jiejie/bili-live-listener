@@ -16,5 +16,5 @@ function dataProcessor(rawData: any): Message<TAMPLATEData> {
 export const TAMPLATEEvent: EventInfo<TAMPLATEData> = {
   cmdName: 'TAMPLATE',
   handlerName: 'onTAMPLATE',
-  dataProcessor
+  dataProcessor,
 }

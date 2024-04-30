@@ -34,7 +34,7 @@ const commonEvents = [
   LiveEvent,
   HeartbeatEvent,
   CloseEvent,
-  ErrorEvent
+  ErrorEvent,
 ]
 
 const events = [
@@ -58,7 +58,7 @@ const events = [
   RedPocketStartEvent,
   RedPocketEndEvent,
   PopularRankUpdateEvent,
-  DanmuInteractEvent
+  DanmuInteractEvent,
 ]
 
 export interface BiliLiveOptions {

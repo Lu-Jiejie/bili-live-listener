@@ -13,7 +13,7 @@ function dataProcessor(rawData: any): Message<FansCountUpdateData> {
   const { data } = rawData
   const newData: FansCountUpdateData = {
     fansCount: data.fans,
-    fansClubCount: data.fans_club
+    fansClubCount: data.fans_club,
   }
   return normalizeMessage(rawData.cmd, newData, rawData)
 }
@@ -21,5 +21,5 @@ function dataProcessor(rawData: any): Message<FansCountUpdateData> {
 export const FansCountUpdateEvent: EventInfo<FansCountUpdateData> = {
   cmdName: 'ROOM_REAL_TIME_MESSAGE_UPDATE',
   handlerName: 'onFansCountUpdate',
-  dataProcessor
+  dataProcessor,
 }

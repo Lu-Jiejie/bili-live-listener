@@ -15,7 +15,7 @@ function dataProcessor(rawData: any): Message<LiveStartData> {
   const newData: LiveStartData = {
     platform: rawData.live_platform,
     timestamp: rawData.live_time,
-    roomId: rawData.roomid
+    roomId: rawData.roomid,
   }
   return normalizeMessage(rawData.cmd, newData, rawData)
 }
@@ -23,5 +23,5 @@ function dataProcessor(rawData: any): Message<LiveStartData> {
 export const LiveStartEvent: EventInfo<LiveStartData> = {
   cmdName: 'LIVE',
   handlerName: 'onLiveStart',
-  dataProcessor
+  dataProcessor,
 }

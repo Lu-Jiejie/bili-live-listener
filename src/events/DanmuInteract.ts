@@ -59,9 +59,9 @@ function dataProcessorVote(rawData: any): Message<DanmuInteractData> {
         id: option.idx,
         description: option.desc,
         count: option.cnt,
-        percent: option.percent
+        percent: option.percent,
       })),
-      count: data.cnt
+      count: data.cnt,
     },
     combo: data.combo
       ? data.combo.map((c: any) => ({
@@ -70,9 +70,9 @@ function dataProcessorVote(rawData: any): Message<DanmuInteractData> {
         prefixIcon: c.prefix_icon,
         guide: c.guide,
         status: c.status === 5 ? 'Ended' : 'Ongoing',
-        count: c.cnt
+        count: c.cnt,
       }))
-      : undefined
+      : undefined,
   }
   return normalizeMessage(rawData.cmd, newData, rawData)
 }
@@ -89,8 +89,8 @@ function dataProcessorCombo(rawData: any): Message<DanmuInteractData> {
       prefixIcon: c.prefix_icon,
       guide: c.guide,
       status: c.status === 5 ? 'Ended' : 'Ongoing',
-      count: c.cnt
-    }))
+      count: c.cnt,
+    })),
   }
   return normalizeMessage(rawData.cmd, newData, rawData)
 }
@@ -109,5 +109,5 @@ function dataProcessor(rawData: any): Message<DanmuInteractData> | undefined {
 export const DanmuInteractEvent: EventInfo<DanmuInteractData> = {
   cmdName: 'DM_INTERACTION',
   handlerName: 'onDanmuInteract',
-  dataProcessor
+  dataProcessor,
 }

@@ -22,7 +22,7 @@ function dataProcessor(rawData: any): Message<HotRankUpdateData> {
     description: data.rank_desc,
     rank: data.rank,
     countdown: data.countdown,
-    timestamp: data.timestamp
+    timestamp: data.timestamp,
   }
   return normalizeMessage(rawData.cmd, newData, rawData)
 }
@@ -30,5 +30,5 @@ function dataProcessor(rawData: any): Message<HotRankUpdateData> {
 export const HotRankUpdateEvent: EventInfo<HotRankUpdateData> = {
   cmdName: 'HOT_RANK_CHANGED_V2',
   handlerName: 'onHotRankUpdate',
-  dataProcessor
+  dataProcessor,
 }

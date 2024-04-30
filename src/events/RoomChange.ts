@@ -25,7 +25,7 @@ function dataProcessor(rawData: any): Message<RoomChangeData> {
     parentAreaName: data.parent_area_name,
     areaId: data.area_id,
     areaName: data.area_name,
-    timestamp: Number.parseInt(data.sub_session_key.split(':')[1])
+    timestamp: Number.parseInt(data.sub_session_key.split(':')[1]),
   }
   return normalizeMessage(rawData.cmd, newData, rawData)
 }
@@ -33,5 +33,5 @@ function dataProcessor(rawData: any): Message<RoomChangeData> {
 export const RoomChangeEvent: EventInfo<RoomChangeData> = {
   cmdName: 'ROOM_CHANGE',
   handlerName: 'onRoomChange',
-  dataProcessor
+  dataProcessor,
 }
