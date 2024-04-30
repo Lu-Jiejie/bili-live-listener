@@ -4,14 +4,14 @@
   "version": "1.0.5",
   "packageManager": "pnpm@9.0.6",
   "description": "Bilibili直播间消息监听库。",
-  "author": "LU-JIEJIE",
+  "author": "Lu-Jiejie <lu-jiejie@outlook.com>",
   "license": "MIT",
-  "homepage": "https://github.com/LU-JIEJIE/bili-live-listener#readme",
+  "homepage": "https://github.com/Lu-Jiejie/bili-live-listener#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LU-JIEJIE/bili-live-listener.git"
+    "url": "git+https://github.com/Lu-Jiejie/bili-live-listener.git"
   },
-  "bugs": "https://github.com/LU-JIEJIE/bili-live-listener/issues",
+  "bugs": "https://github.com/Lu-Jiejie/bili-live-listener/issues",
   "keywords": [
     "bilibili",
     "live",
