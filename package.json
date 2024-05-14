@@ -2,7 +2,7 @@
   "name": "bili-live-listener",
   "type": "module",
   "version": "1.0.5",
-  "packageManager": "pnpm@9.0.6",
+  "packageManager": "pnpm@9.1.1",
   "description": "Bilibili直播间消息监听库。",
   "author": "Lu-Jiejie <lu-jiejie@outlook.com>",
   "license": "MIT",

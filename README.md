@@ -1,6 +1,10 @@
 # bili-live-listener
 
-[![NPM Version](https://img.shields.io/npm/v/bili-live-listener?style=flat&color=skyblue)](https://www.npmjs.com/package/bili-live-listener) [![Bilibili](https://img.shields.io/badge/-Bilibili直播-skyblue?style=flat&logo=Bilibili&logoColor=444)](https://live.bilibili.com/)
+[![npm version][npm-version-badge]][npm-version-href]
+[![minzip][minzip-badge]][minizip-href]
+[![jsdocs][jsdocs-badge]][jsdocs-href]
+[![license][license-badge]][license-href]
+[![bilibili live][bili-live-badge]][bili-live-href]
 
 Bilibili直播间消息监听库。
 
@@ -220,3 +224,15 @@ export interface DanmuData {
 [SocialSisterYi/bilibili-API-collect](https://github.com/SocialSisterYi/bilibili-API-collect/blob/master/docs/live/message_stream.md)
 
 [lovelyyoshino/Bilibili-Live-API](https://github.com/lovelyyoshino/Bilibili-Live-API/blob/master/API.WebSocket.md)
+
+<!-- Badge -->
+[npm-version-badge]: https://img.shields.io/npm/v/bili-live-listener?style=flat&color=skyblue&labelColor=444
+[npm-version-href]: https://www.npmjs.com/package/bili-live-listener
+[minzip-badge]: https://img.shields.io/bundlephobia/minzip/bili-live-listener?style=flat&color=skyblue&labelColor=444&label=minizip
+[minizip-href]: https://bundlephobia.com/result?p=bili-live-listener
+[jsdocs-badge]: https://img.shields.io/badge/jsDocs-reference-skyblue?style=flat&color=skyblue&labelColor=444
+[jsdocs-href]: https://www.jsdocs.io/package/bili-live-listener
+[license-badge]: https://img.shields.io/github/license/Lu-Jiejie/bili-live-listener?style=flat&color=skyblue&labelColor=444
+[license-href]: https://github.com/Lu-Jiejie/bili-live-listener/blob/main/LICENSE
+[bili-live-badge]: https://img.shields.io/badge/-Bilibili直播-skyblue?style=flat&logo=Bilibili&color=skyblue&labelColor=444&logoColor=white
+[bili-live-href]: https://live.bilibili.com/
