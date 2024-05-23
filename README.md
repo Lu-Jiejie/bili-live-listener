@@ -1,7 +1,7 @@
 # bili-live-listener
 
 [![npm version][npm-version-badge]][npm-version-href]
-[![minzip][minzip-badge]][minizip-href]
+[![install size][install-size-badge]][install-size-href]
 [![jsdocs][jsdocs-badge]][jsdocs-href]
 [![license][license-badge]][license-href]
 [![bilibili live][bili-live-badge]][bili-live-href]
@@ -228,8 +228,8 @@ export interface DanmuData {
 <!-- Badge -->
 [npm-version-badge]: https://img.shields.io/npm/v/bili-live-listener?style=flat&color=skyblue&labelColor=444
 [npm-version-href]: https://www.npmjs.com/package/bili-live-listener
-[minzip-badge]: https://img.shields.io/bundlephobia/minzip/bili-live-listener?style=flat&color=skyblue&labelColor=444&label=minizip
-[minizip-href]: https://bundlephobia.com/result?p=bili-live-listener
+[install-size-badge]: https://img.shields.io/badge/dynamic/json?url=https://packagephobia.com/v2/api.json?p=bili-live-listener&query=$.install.pretty&label=install%20size&style=flat&color=skyblue&labelColor=444
+[install-size-href]: https://bundlephobia.com/result?p=bili-live-listener
 [jsdocs-badge]: https://img.shields.io/badge/jsDocs-reference-skyblue?style=flat&color=skyblue&labelColor=444
 [jsdocs-href]: https://www.jsdocs.io/package/bili-live-listener
 [license-badge]: https://img.shields.io/github/license/Lu-Jiejie/bili-live-listener?style=flat&color=skyblue&labelColor=444
