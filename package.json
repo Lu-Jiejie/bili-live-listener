@@ -40,11 +40,11 @@
     "dist"
   ],
   "scripts": {
-    "dev": "unbuild --stub",
-    "build": "unbuild",
+    "dev": "tsdown --stub",
+    "build": "tsdown",
     "lint": "eslint .",
     "release": "bumpp && npm publish",
-    "start": "esno src/start.ts",
+    "start": "tsx src/start.ts",
     "test": "vitest",
     "typecheck": "tsc --noEmit",
     "prepublishOnly": "nr build",
@@ -58,11 +58,11 @@
     "@types/node": "^20.11.27",
     "bumpp": "^9.4.0",
     "eslint": "^8.57.0",
-    "esno": "^4.7.0",
     "lint-staged": "^15.2.2",
     "simple-git-hooks": "^2.10.0",
+    "tsdown": "^0.14.2",
+    "tsx": "^4.20.5",
     "typescript": "^5.4.2",
-    "unbuild": "^2.0.0",
     "vitest": "^0.34.6"
   },
   "simple-git-hooks": {
