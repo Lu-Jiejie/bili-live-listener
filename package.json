@@ -22,15 +22,6 @@
     ".": "./dist/index.mjs",
     "./package.json": "./package.json"
   },
-  "types": "./dist/index.d.ts",
-  "typesVersions": {
-    "*": {
-      "*": [
-        "./dist/*",
-        "./dist/index.d.ts"
-      ]
-    }
-  },
   "files": [
     "dist"
   ],
@@ -42,7 +33,7 @@
     "start": "tsx src/start.ts",
     "test": "vitest",
     "typecheck": "tsc --noEmit",
-    "prepublishOnly": "nr build",
+    "prepublishOnly": "pnpm run build",
     "prepare": "simple-git-hooks"
   },
   "dependencies": {
