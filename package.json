@@ -2,7 +2,7 @@
   "name": "bili-live-listener",
   "type": "module",
   "version": "1.0.5",
-  "packageManager": "pnpm@9.1.1",
+  "packageManager": "pnpm@10.28.0",
   "description": "Bilibili直播间消息监听库。",
   "author": "Lu-Jiejie <lu-jiejie@outlook.com>",
   "license": "MIT",
@@ -19,14 +19,9 @@
   ],
   "sideEffects": false,
   "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.cjs"
-    }
+    ".": "./dist/index.mjs",
+    "./package.json": "./package.json"
   },
-  "main": "./dist/index.mjs",
-  "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "typesVersions": {
     "*": {
@@ -54,16 +49,17 @@
     "bilibili-live-ws": "^6.3.1"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.8.2",
-    "@types/node": "^20.11.27",
-    "bumpp": "^9.4.0",
-    "eslint": "^8.57.0",
-    "lint-staged": "^15.2.2",
-    "simple-git-hooks": "^2.10.0",
-    "tsdown": "^0.14.2",
-    "tsx": "^4.20.5",
-    "typescript": "^5.4.2",
-    "vitest": "^0.34.6"
+    "@antfu/eslint-config": "^7.0.1",
+    "@types/node": "^20.19.29",
+    "bumpp": "^10.4.0",
+    "eslint": "^9.39.2",
+    "lint-staged": "^16.2.7",
+    "publint": "^0.3.16",
+    "simple-git-hooks": "^2.13.1",
+    "tsdown": "^0.19.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.17"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged"
