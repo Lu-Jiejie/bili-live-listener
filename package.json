@@ -29,7 +29,7 @@
     "dev": "tsdown --stub",
     "build": "tsdown",
     "lint": "eslint .",
-    "release": "bumpp && npm publish",
+    "release": "bumpp",
     "start": "tsx src/start.ts",
     "test": "vitest",
     "typecheck": "tsc --noEmit",
